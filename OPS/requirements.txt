@@ -11,3 +11,4 @@ cryptography
 getpass
 pyfiglet
 logging
+http
