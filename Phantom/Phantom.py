@@ -20,17 +20,18 @@ try:
     import cryptography
     import Cryptodome
     import pyfiglet
+    import http
+    from os import system
 except ImportError as i:
-    print("Error ! Make sure you have installed all the modules used in this program !")
-    time.sleep(1)
-    print("Please enter the command: pip3 install -r requirements.txt")
-    time.sleep(1)
-    print("And execute again the program")
-    time.sleep(1)
-    print(i)
+    print("Error while importing modules !")
+    time.sleep(2)
+    print("Ignoring Error...")
+    time.sleep(2)
+    system("sudo pip3 install -r requirements.txt")
+    pass
 #End of imports
 
-#PHANTOM
+#Logo
 phantom=pyfiglet.figlet_format("PHANTOM")
 print(phantom)
 #
