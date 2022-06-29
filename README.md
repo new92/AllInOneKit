@@ -35,8 +35,6 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ▶ Social Media Accounts Brute Forcer ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/BruteForce">BruteForcer</a>
 
-▶ DDoS Website Attack Tool ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/DDoS">DDoS</a>
-
 
 <h2> DOWNLOAD </h2>
 
