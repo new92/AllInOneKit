@@ -20,14 +20,15 @@ try:
     import getpass
     import pyfiglet
     import logging
+    import http
+    from os import system
 except ImportError as imp:
-    print("Error ! Please make sure you have installed all the modules !")
-    time.sleep(1)
-    print("Please enter the command: pip3 install -r OPSrequirements.txt")
-    time.sleep(1)
-    print("And execute again the program")
-    time.sleep(1)
-    print(imp)
+    print("Error while importing modules !")
+    time.sleep(2)
+    print("Ignoring Error...")
+    time.sleep(2)
+    system("sudo pip3 install -r requirements.txt")
+    pass
 #End of Imports
 
 #Logo
