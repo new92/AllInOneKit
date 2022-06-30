@@ -23,9 +23,9 @@ try:
     import http
     from os import system
 except ImportError as imp:
-    print("Error while importing modules !")
+    print("WARNING: Not all modules used in this program have been installed !")
     time.sleep(2)
-    print("Ignoring Error...")
+    print("Ignoring Warning...")
     time.sleep(2)
     system("sudo pip3 install -r requirements.txt")
     pass
