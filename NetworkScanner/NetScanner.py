@@ -19,7 +19,9 @@ try:
     from socket import *
     from scapy.all import ARP, Ether, srp
 except ImportError as imp:
-    print("Error !")
+    print("WARNING: Not all modules used in this program have been installed !")
+    time.sleep(2)
+    print("Ignoring Warning...")
     time.sleep(2)
     system("sudo pip3 install -r requirements.txt")
 #End of Imports
@@ -31,17 +33,21 @@ print(netscanner)
 #Main Program
 print("[+] Instagram Tools for Account Management")
 print("\n")
+time.sleep(2)
 print("[+] Github: @new92")
 print("\n")
+time.sleep(2)
 print("[01] Scan Network for Vulnerabilities")
 print("[02] Display Active Devices in the Network")
 print("[0] Exit")
+time.sleep(2)
 option=input("[::] Choose an option: ")
 while option != "01" and option != "02" and option != "03" and option != "0" and option != "1" and option != "2" and option != "3":
     print("Invalid option !")
     time.sleep(2)
     option=input("[::] Please enter again: ")
 if option == "01" or option == "1":
+    time.sleep(1)
     ip=input("Please enter the ip address of the router: ")
     while "." not in ip:
         print("Invalid IP Address !")
@@ -58,15 +64,13 @@ if option == "01" or option == "1":
             print("Port "+str(i)+": OPEN")
         sock.close()
 elif option == "02" or option == "2":
-
+    time.sleep(1)
     target_ip=input("Please enter the IP address of the router: ")
     arp = ARP(pdst=target_ip)
     ether = Ether(dst="ff:ff:ff:ff:ff:ff")
     packet = ether/arp
-
     result = srp(packet, timeout=3, verbose=0)[0]
     clients = []
-
     for sent, received in result:
         clients.append({'ip': received.psrc, 'mac': received.hwsrc})
     print("Active devices:")
