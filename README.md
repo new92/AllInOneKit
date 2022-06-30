@@ -57,7 +57,7 @@ This kit contains many programs for brute force for social media accounts, for i
   
 ● cd AllInOneKit 
   
-● pip3 install -r requirements.txt    OR    pip3 install -r requirementsA.txt    for Anubis.py program
+● pip3 install -r requirements.txt    OR    sudo pip3 install -r requirements.txt
   
 ● python3 <program's name>  OR  cd <folder's name>  AND  python3 <program's name>
   
@@ -75,7 +75,7 @@ This kit contains many programs for brute force for social media accounts, for i
   
 ● cd AllInOneKit 
   
-● pip3 install -r requirements.txt    OR    pip3 install -r requirementsA.txt    for Anubis.py program
+● pip3 install -r requirements.txt    OR    sudo pip3 install -r requirements.txt
   
 ● python3 <program's name>  OR  cd <folder's name>  AND  python3 <program's name>  
   
