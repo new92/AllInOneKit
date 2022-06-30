@@ -1,3 +1,3 @@
-import os
+from os import system
 
-os.system("auto-py-to-exe.exe")
+system("auto-py-to-exe.exe")
