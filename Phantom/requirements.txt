@@ -8,5 +8,8 @@ requests
 sniffer
 crypto
 cryptography
-Cryptodome
 pyfiglet
+whois
+re
+argparse
+http
