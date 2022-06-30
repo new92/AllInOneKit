@@ -17,11 +17,11 @@ try:
     import sniffer
     import crypto
     import cryptography
-    import Cryptodome
     import pyfiglet
     import whois
     import re
     import argparse
+    import http
     from os import system
 except ImportError as i:
     print("WARNING: Not all modules used in this program have been installed !")
