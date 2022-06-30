@@ -2,7 +2,7 @@
 Author: @new92
 Trojan program
 Made for educational purposes 
-The author has no responsibility for any illegal activity/activities carried out using this tool
+The author has no responsibility for any illegal activity/activities carried out using this program
           d8888                   888      d8b
          d88888                   888      Y8P
         d88P888                   888
