@@ -42,41 +42,67 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ## Linux:
 
-● git clone https://github.com/new92/AllInOneKit
+$ git clone https://github.com/new92/AllInOneKit
 
-● cd AllInOneKit
+$ cd AllInOneKit
 
-● pip3 install -r requirements.txt    OR     sudo pip3 install -r requirements.txt
+$ pip3 install -r requirements.txt    OR     sudo pip3 install -r requirements.txt
 
-● python3 <program's name>  OR  cd <folder's name>  AND  python3 <program's name>
+$ python3 <program's name>  OR  cd <folder's name>  AND  python3 <program's name>
   
 
 ## Windows:
 
-● git clone https://github.com/new92/AllInOneKit
-  
-● cd AllInOneKit 
-  
-● pip3 install -r requirements.txt    OR    sudo pip3 install -r requirements.txt
-  
-● python3 <program's name>  OR  cd <folder's name>  AND  python3 <program's name>
-  
+▶ WITH GITHUB DESKTOP: https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop
+
+▶ WITH GIT: 
+    $ git clone https://www.github.com/new92/AllInOneKit.git
+    
+    $ cd AllInOneKit
+    
+    $ python3 <program's name>  
+    
+    OR:
+    
+    $ cd <folder's name>
+    $ python3 <program's name>
+
+
 ## Termux:
   
-● pkg update && pkg upgrade
+$ pkg update && pkg upgrade
   
-● pkg install git
+$ pkg install git
   
-● pkg install python
+$ pkg install python
   
-● pkg install pip  
+$ pkg install pip
+
+$ pkg install ncurses-utils
+
+$ pkg install tsu
   
-● git clone https://github.com/new92/AllInOneKit
+$ git clone https://github.com/new92/AllInOneKit
   
-● cd AllInOneKit 
+$ cd AllInOneKit 
   
-● pip3 install -r requirements.txt    OR    sudo pip3 install -r requirements.txt
+$ pip3 install -r requirements.txt    OR    sudo pip3 install -r requirements.txt
   
-● python3 <program's name>  OR  cd <folder's name>  AND  python3 <program's name>  
+$ python3 <program's name>  OR  cd <folder's name>  AND  python3 <program's name>  
   
-  
+## MAC:
+
+▶ WITH GITHUB DESKTOP: https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop
+
+▶ WITH GIT:
+    $ git clone https://www.github.com/new92/AllInOneKit.git
+    
+    $ cd AllInOneKit
+    
+    $ python3 <program's name>
+    
+    OR:
+    
+    $ cd <folder's name>
+    
+    $ python3 <program's name>
