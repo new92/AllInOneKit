@@ -63,7 +63,8 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ## Windows:
 
-▶ WITH GITHUB DESKTOP: https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop
+▶ WITH GITHUB DESKTOP: 
+        https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop
 
 ▶ WITH GIT: 
     
@@ -103,9 +104,11 @@ This kit contains many programs for brute force for social media accounts, for i
   
 ## MAC:
 
-▶ WITH GITHUB DESKTOP: https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop
+▶ WITH GITHUB DESKTOP: 
+        https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop
 
 ▶ WITH GIT:
+       
     $ git clone https://www.github.com/new92/AllInOneKit.git
     
     $ cd AllInOneKit
