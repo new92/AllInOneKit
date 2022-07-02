@@ -42,13 +42,23 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ## Linux:
 
-$ git clone https://github.com/new92/AllInOneKit
+    $ git clone https://github.com/new92/AllInOneKit
 
-$ cd AllInOneKit
+    $ cd AllInOneKit
 
-$ pip3 install -r requirements.txt    OR     sudo pip3 install -r requirements.txt
+    $ pip3 install -r requirements.txt    
+    
+    OR:
+    
+    $ sudo pip3 install -r requirements.txt
 
-$ python3 <program's name>  OR  cd <folder's name>  AND  python3 <program's name>
+    $ python3 <program's name>  
+    
+    OR:  
+    
+    $ cd <folder's name>  
+    
+    $ python3 <program's name>
   
 
 ## Windows:
