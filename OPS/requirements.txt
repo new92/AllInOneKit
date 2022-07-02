@@ -2,8 +2,7 @@ nmap
 sniffer
 socket
 time 
-os 
-sys
+os
 requests
 geocoder
 crypto 
@@ -12,3 +11,4 @@ getpass
 pyfiglet
 logging
 http
+datetime
