@@ -22,13 +22,13 @@ try:
     import logging
     import http
     from os import system
+    from datetime import time
 except ImportError as imp:
     print("WARNING: Not all modules used in this program have been installed !")
     time.sleep(2)
     print("Ignoring Warning...")
     time.sleep(2)
     system("sudo pip3 install -r requirements.txt")
-    pass
 #End of Imports
 
 #Logo
