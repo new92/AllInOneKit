@@ -27,7 +27,7 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ▶ Trojan :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Trojan">Trojan</a>
 
-▶ Paypal Phising Attack ✅ ➡️ <a href="[https://github.com/new92/AllInOneKit/tree/main/PayPalWebPhising](https://github.com/new92/AllInOneKit/tree/main/WebPhising/PayPalWebPhising)">PayPalWebPhising</a>
+▶ Paypal Phising Attack ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising/PayPalWebPhising">PayPalWebPhising</a>
 
 ▶ Open Port Scanner ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/OPS">OPS</a>
 
