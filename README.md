@@ -19,7 +19,7 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ## ALREADY DONE:
 
-▶ Netflix Phising Attack :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/NetflixWebPhising">NetflixWebPhising</a>
+▶ Netflix Phising Attack :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising/NetflixWebPhising">NetflixWebPhising</a>
 
 ▶ Information Gathering Tool for Social Media Accounts :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/blob/main/Sniffer.py">Sniffer</a>
 
