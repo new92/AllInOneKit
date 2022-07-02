@@ -28,14 +28,13 @@ try:
     import sniffer
     import nmap
     from geopy.geocoders import Nominatim
+    from os import system
 except ImportError as imp:
-    print("Error ! Make sure you have installed all the modules used in this program !")
-    time.sleep(1)
-    print("Please enter the command: pip3 install -r requirements.txt")
-    time.sleep(1)
-    print("And execute again the program")
-    time.sleep(1)
-    print(imp)
+    print("WARNING: Not all modules used in this program have been installed !")
+    time.sleep(2)
+    print("Ignoring Warning...")
+    time.sleep(2)
+    system("sudo pip3 install -r requirements.txt")
 #End of imports
 
 
