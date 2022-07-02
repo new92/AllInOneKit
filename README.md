@@ -29,6 +29,8 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ▶ Paypal Phising Attack ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising/PayPalWebPhising">PayPalWebPhising</a>
 
+▶ Wordpress Phising Attack ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising/WordpressWebPhising">WordpressWebPhising</a>
+
 ▶ Open Port Scanner ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/OPS">OPS</a>
 
 ▶ Instagram Information Gathering Tool ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/blob/main/Sniffer.py">Sniffer</a> 
