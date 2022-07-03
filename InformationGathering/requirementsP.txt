@@ -1,0 +1,12 @@
+sys
+os
+socket
+locale
+platform
+time
+requests
+sniffer
+crypto
+cryptography
+Cryptodome
+pyfiglet
