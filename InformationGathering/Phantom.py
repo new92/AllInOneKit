@@ -29,7 +29,7 @@ except ImportError as i:
     time.sleep(2)
     print("Ignoring Warning...")
     time.sleep(2)
-    system("sudo pip3 install -r requirements.txt")
+    system("sudo pip3 install -r requirementsP.txt")
 #End of imports
 
 #Logo
