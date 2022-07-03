@@ -19,25 +19,21 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ## ALREADY DONE:
 
-▶ Netflix Phising Attack :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising/NetflixWebPhising">NetflixWebPhising</a>
+▶ Netflix Phising Attack :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising/NetflixWebPhising">Here</a>
 
-▶ Information Gathering Tool for Social Media Accounts :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/blob/main/Sniffer.py">Sniffer</a>
+▶ Information Gathering :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/InformationGathering">Here</a>
 
-▶ Information Gathering Tool for Websites :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Phantom">Phantom</a>
+▶ Trojan :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Trojan">Here</a>
 
-▶ Trojan :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Trojan">Trojan</a>
+▶ Paypal Phising Attack ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising/PayPalWebPhising">Here</a>
 
-▶ Paypal Phising Attack ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising/PayPalWebPhising">PayPalWebPhising</a>
+▶ Wordpress Phising Attack ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising/WordpressWebPhising">Here</a>
 
-▶ Wordpress Phising Attack ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising/WordpressWebPhising">WordpressWebPhising</a>
+▶ Open Port Scanner ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/OPS">Here</a>
 
-▶ Open Port Scanner ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/OPS">OPS</a>
+▶ Social Media Accounts Brute Forcer ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/BruteForce">Here</a>
 
-▶ Instagram Information Gathering Tool ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/blob/main/Sniffer.py">Sniffer</a> 
-
-▶ Social Media Accounts Brute Forcer ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/BruteForce">BruteForcer</a>
-
-▶ Network Scanner ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/NetworkScanner">NetScanner</a>
+▶ Network Scanner ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/NetworkScanner">Here</a>
 
 
 <h2> DOWNLOAD </h2>
