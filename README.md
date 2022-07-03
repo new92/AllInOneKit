@@ -80,6 +80,7 @@ This kit contains many programs for brute force for social media accounts, for i
     OR:
     
     $ cd <folder's name>
+    
     $ python3 <program's name>
 
 
