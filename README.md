@@ -19,15 +19,11 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ## ALREADY DONE:
 
-▶ Netflix Phising Attack :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising/NetflixWebPhising">Here</a>
+▶ Phising Attacks :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising">Here</a>
 
 ▶ Information Gathering :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/InformationGathering">Here</a>
 
 ▶ Trojan :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Trojan">Here</a>
-
-▶ Paypal Phising Attack ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising/PayPalWebPhising">Here</a>
-
-▶ Wordpress Phising Attack ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising/WordpressWebPhising">Here</a>
 
 ▶ Open Port Scanner ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/OPS">Here</a>
 
