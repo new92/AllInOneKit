@@ -16,6 +16,7 @@ try:
     import os
     import nmap
     import pyfiglet
+    import sniffer
     from socket import *
     from scapy.all import ARP, Ether, srp
 except ImportError as imp:
