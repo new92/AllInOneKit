@@ -8,8 +8,6 @@ This kit contains many programs for brute force for social media accounts, for i
 ## TO DO: 
 
 
-▶ Facebook Phising Attack :x:
-
 ▶ Instagram Phising Attack :x:             
 
 ▶ Linkedin Phising Attack :x:
