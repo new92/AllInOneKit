@@ -16,6 +16,8 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ▶ Google Phising Attack :x:
 
+▶ Mystery Attack :x:
+
 
 ## ALREADY DONE:
 
