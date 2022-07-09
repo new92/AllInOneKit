@@ -25,7 +25,7 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ▶ Open Port Scanner ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/OPS">Here</a>
 
-▶ Social Media Accounts Brute Forcer ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/BruteForce">Here</a>
+▶ Social Media Accounts Brute Forcer ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/BruteForcer">Here</a>
 
 ▶ Network Scanner ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/NetworkScanner">Here</a>
 
