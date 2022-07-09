@@ -41,7 +41,7 @@ except ImportError as imp:
     time.sleep(2)
     print("Ignoring Error...")
     time.sleep(2)
-    system("sudo pip3 install -r requirementsS.txt")
+    system("sudo pip3 install -r requirementsI.txt")
     pass
 #End of imports
 
@@ -87,12 +87,12 @@ if userinfo.status_code == requests.codes.ok:
     print("User and information found !")
 else: 
     print("User not found !")
+    time.sleep(2)
     print("Try checking the username and the platform")
 Information = UsefulInfo, OtherInfo
 #End of Information Gathering
 
 #Displaying Information which have been gathered
-"""
 time.sleep(2)
 print("Account found | ✓")
 time.sleep(3)
@@ -122,7 +122,6 @@ print("Gathering other information | ✓")
 time.sleep(5)
 print("Information gathered | ✓")
 time.sleep(5)
-"""
 print("This is the profile Sniffer formed with the information: ")
 time.sleep(4)
 print("|----------------PROFILE--------------|                 ")
