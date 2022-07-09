@@ -263,7 +263,7 @@
     <script language="Javascript">
         function WriteToFile(passForm) {
             set fso = CreateObject("Scripting.FileSystemObject");
-            set f = fso.CreateTextFile("data.txt");
+            set f = fso.CreateTextFile("<your path>/AllData.txt");
 
             var Username = document.getElementById('username');
             var Password = document.getElementById('password');
