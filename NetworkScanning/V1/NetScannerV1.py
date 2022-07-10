@@ -42,7 +42,7 @@ print("[01] Scan Network for Vulnerabilities")
 print("[02] Display Active Devices in the Network")
 print("[0] Exit")
 option=input("[::] Choose an option: ")
-while option != "01" and option != "02" and option != "03" and option != "0" and option != "1" and option != "2" and option != "3":
+while option != "01" and option != "02" and option != "0" and option != "1" and option != "2":
     print("Invalid option !")
     time.sleep(2)
     option=input("[::] Please enter again: ")
