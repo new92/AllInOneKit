@@ -31,7 +31,7 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ▶ Social Media Accounts Brute Forcer ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/BruteForcer">Here</a>
 
-▶ Network Scanner ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/NetworkScanner">Here</a>
+▶ Network Scanning ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/NetworkScanning">Here</a>
 
 
 <h2> DOWNLOAD </h2>
