@@ -1,6 +1,6 @@
 """
 Author: @new92
-Trojan program
+Trojan Program
 Made for educational purposes 
 The author has no responsibility for any illegal activity/activities carried out using this program
           d8888                   888      d8b
