@@ -1,8 +1,6 @@
 """
 Author: @new92
 NetScanner: Program for Network Scanning !
-This program has been made for educational purposes
-The author has no responsibility for any illegal activity/activities carried out using this program
 """
 
 #Imports
@@ -16,34 +14,35 @@ try:
     import os
     import nmap
     import pyfiglet
-    import sniffer
+    import platform
     from socket import *
     from scapy.all import ARP, Ether, srp
 except ImportError as imp:
-    print("WARNING: Not all modules used in this program have been installed !")
+    print("[!] WARNING: Not all modules used in this program have been installed !")
     time.sleep(2)
-    print("Ignoring Warning...")
+    print("[+] Ignoring Warning...")
     time.sleep(2)
-    system("sudo pip3 install -r requirements.txt")
+    if platform.system == "Windows":
+        system("pip3 install -r requirementsV1.txt")
+    else:
+        system("sudo pip3 install -r requirementsV1.txt")
 #End of Imports
 
 #Main Program
 netscanner=pyfiglet.figlet_format("NetScanner")
 print(netscanner)
 
-#Main Program
-print("[+] Instagram Tools for Account Management")
+time.sleep(1)
+print("[+] Network Scanner")
 print("\n")
 time.sleep(2)
 print("[+] Github: @new92")
 print("\n")
-time.sleep(2)
 print("[01] Scan Network for Vulnerabilities")
 print("[02] Display Active Devices in the Network")
 print("[0] Exit")
-time.sleep(2)
 option=input("[::] Choose an option: ")
-while option != "01" and option != "02" and option != "0" and option != "1" and option != "2":
+while option != "01" and option != "02" and option != "03" and option != "0" and option != "1" and option != "2" and option != "3":
     print("Invalid option !")
     time.sleep(2)
     option=input("[::] Please enter again: ")
@@ -80,6 +79,7 @@ elif option == "02" or option == "2":
     for client in clients:
         print("\n{:16}    {}".format(client['ip'], client['mac']))
         time.sleep(1)
+    print("<END>")
 else:
     print("Exiting...")
     time.sleep(2)
