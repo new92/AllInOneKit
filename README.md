@@ -14,6 +14,10 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ▶ Google Phising Attack :x:
 
+▶ Pinterest Phising Attack :x:
+
+▶ New Tool for Phising Attack (with Python) :x:
+
 
 ## ALREADY DONE:
 
