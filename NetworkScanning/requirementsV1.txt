@@ -2,11 +2,9 @@ socket
 http
 websockets
 time
-datetime
-os
 nmap
 pyfiglet
+platform
 ARP
 Ether
 srp
-sniffer
