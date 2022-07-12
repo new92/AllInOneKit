@@ -9,3 +9,6 @@ Cryptodome
 pyfiglet
 tqdm
 nmap
+whois
+re
+argparse
