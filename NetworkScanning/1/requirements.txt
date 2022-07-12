@@ -1,10 +1,10 @@
 socket
 http
 websockets
-time
 nmap
 pyfiglet
 platform
+tqdm
 ARP
 Ether
 srp
