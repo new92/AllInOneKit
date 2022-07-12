@@ -1,8 +1,8 @@
 ﻿"""
 Author: @new92
-Anubis: Tool for Website Information Gathering
+Phantom: Tool for Website Information Gathering
 Made for educational purposes 
-The author has no responsibility for any illegal activity/activities carried out with this tool
+The author has no responsibility for any illegal activity/activities carried out using this program
 """
 
 
