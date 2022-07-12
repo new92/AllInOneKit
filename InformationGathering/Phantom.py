@@ -74,30 +74,31 @@ FullHostName=socket.getfqdn(IPwebsite)
 #Displaying Information / Main program
 for i in tqdm(range(1000000)):
     pass
+time.sleep(1)
 print("[+] Website found | ✓")
 for i in tqdm(range(1000000)):
     pass
-time.sleep(3)
+time.sleep(1)
 print("[+] Checking internet connection | ✓")
 for i in tqdm(range(1000000)):
     pass
-time.sleep(5)
+time.sleep(1)
 print("[+] Checking website's security | ✓")
 for i in tqdm(range(1000000)):
     pass
-time.sleep(5)
+time.sleep(1)
 print("[+] Bypassing security | ✓")
 for i in tqdm(range(1000000)):
     pass
-time.sleep(5)
+time.sleep(1)
 print("[+] Initiating information gathering | ✓")
 for i in tqdm(range(1000000)):
     pass
-time.sleep(7)
+time.sleep(1)
 print("[+] Information gathered | ✓")
 for i in tqdm(range(1000000)):
     pass
-time.sleep(5)
+time.sleep(1)
 print("[+] This is the profile of the website Phantom formed with the information:")
 time.sleep(2)
 print("|----------------PROFILE--------------------|             ")
