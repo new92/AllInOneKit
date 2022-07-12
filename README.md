@@ -43,16 +43,8 @@ This kit contains many programs for brute force for social media accounts, for i
     $ git clone https://github.com/new92/AllInOneKit
 
     $ cd AllInOneKit
-
-    $ pip3 install -r requirements.txt    
     
-    OR:
-    
-    $ sudo pip3 install -r requirements.txt
-
-    $ python3 <program's name>  
-    
-    OR:  
+    $ ls
     
     $ cd <folder's name>  
     
@@ -70,10 +62,6 @@ This kit contains many programs for brute force for social media accounts, for i
     $ git clone https://www.github.com/new92/AllInOneKit.git
     
     $ cd AllInOneKit
-    
-    $ python3 <program's name>  
-    
-    OR:
     
     $ cd <folder's name>
     
@@ -96,11 +84,9 @@ This kit contains many programs for brute force for social media accounts, for i
   
     $ git clone https://github.com/new92/AllInOneKit
   
-    $ cd AllInOneKit 
+    $ cd AllInOneKit
   
-    $ pip3 install -r requirements.txt    OR    sudo pip3 install -r requirements.txt
-  
-    $ python3 <program's name>  OR  cd <folder's name>  AND  python3 <program's name>  
+    $ cd <folder's name>  AND  python3 <program's name>  
   
 ## MAC:
 
@@ -113,10 +99,6 @@ This kit contains many programs for brute force for social media accounts, for i
     $ git clone https://www.github.com/new92/AllInOneKit.git
     
     $ cd AllInOneKit
-    
-    $ python3 <program's name>
-    
-    OR:
     
     $ cd <folder's name>
     
