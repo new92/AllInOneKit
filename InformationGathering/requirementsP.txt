@@ -8,3 +8,4 @@ cryptography
 Cryptodome
 pyfiglet
 tqdm
+nmap
