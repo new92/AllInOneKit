@@ -20,3 +20,4 @@ instagrapi
 websockets
 sniffer
 nmap
+tqdm
