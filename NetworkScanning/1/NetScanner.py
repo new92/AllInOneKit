@@ -1,5 +1,6 @@
 """
 Author: @new92
+
 NetScanner: Program for Network Scanning !
 """
 
@@ -14,6 +15,7 @@ try:
     import os
     import nmap
     import pyfiglet
+    import tqdm
     import platform
     from socket import *
     from scapy.all import ARP, Ether, srp
@@ -23,9 +25,9 @@ except ImportError as imp:
     print("[+] Ignoring Warning...")
     time.sleep(2)
     if platform.system == "Windows":
-        system("pip3 install -r requirementsV1.txt")
+        system("pip3 install -r requirements.txt")
     else:
-        system("sudo pip3 install -r requirementsV1.txt")
+        system("sudo pip3 install -r requirements.txt")
 #End of Imports
 
 #Main Program
@@ -43,18 +45,20 @@ print("[02] Display Active Devices in the Network")
 print("[0] Exit")
 option=input("[::] Choose an option: ")
 while option != "01" and option != "02" and option != "0" and option != "1" and option != "2":
-    print("Invalid option !")
-    time.sleep(2)
+    print("[!] Invalid option !")
+    time.sleep(1)
     option=input("[::] Please enter again: ")
 if option == "01" or option == "1":
     time.sleep(1)
-    ip=input("Please enter the ip address of the router: ")
+    ip=input("[+] Please enter the ip address of the router: ")
     while "." not in ip:
-        print("Invalid IP Address !")
+        print("[!] Invalid IP Address !")
         time.sleep(2)
-        ip=input("Please enter again the IP of the router: ")
+        ip=input("[+] Please enter again the IP of the router: ")
 
-    print("Please wait while the program is scanning the network...")
+    print("[+] Please wait while the program is scanning the network...")
+    for b in tqdm(range(1000000)):
+        pass
     for i in range(1, 49000):
         sock = socket(AF_INET, SOCK_STREAM)
         host = gethostbyname(ip)
@@ -65,15 +69,15 @@ if option == "01" or option == "1":
         sock.close()
 elif option == "02" or option == "2":
     time.sleep(1)
-    target_ip=input("Please enter the IP address of the router: ")
-    arp = ARP(pdst=target_ip)
+    rout_ip=input("[+] Please enter the IP address of the router: ")
+    arp = ARP(pdst=rout_ip)
     ether = Ether(dst="ff:ff:ff:ff:ff:ff")
     packet = ether/arp
-    result = srp(packet, timeout=3, verbose=0)[0]
+    res = srp(packet, timeout=3, verbose=0)[0]
     clients = []
-    for sent, received in result:
+    for sent, received in res:
         clients.append({'ip': received.psrc, 'mac': received.hwsrc})
-    print("Active devices:")
+    print("[+] Active devices:")
     time.sleep(2)
     print("IP Address" + " "*18+"MAC Address")
     for client in clients:
@@ -81,7 +85,6 @@ elif option == "02" or option == "2":
         time.sleep(1)
     print("<END>")
 else:
-    print("Exiting...")
-    time.sleep(2)
+    print("[+] Exiting...")
     quit(0)
 #End of the Program
