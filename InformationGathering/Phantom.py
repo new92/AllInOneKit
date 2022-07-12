@@ -23,6 +23,7 @@ try:
     import whois
     import tqdm
     import re
+    import nmap
     import argparse
     from os import system
 except ImportError as i:
