@@ -1,8 +1,6 @@
 """
 Author: @new92
-Program for Scanning Open Ports of a device 
-Not for illegal use !
-The author has no responsibility for any illegal activities carried out using this program
+Program for Scanning Open Ports of a device
 """
 
 #Imports
@@ -15,8 +13,6 @@ try:
     import sys
     import requests
     import platform
-    import crypto 
-    import cryptography
     import getpass
     import pyfiglet
     import logging
@@ -70,5 +66,5 @@ if option == "01" or option == "1":
 
 else: 
     print("[+] Exiting...")
-    quit(0)
+    exit(0)
 #End of the program
