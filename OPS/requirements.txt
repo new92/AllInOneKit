@@ -12,3 +12,4 @@ pyfiglet
 logging
 http
 datetime
+platform
