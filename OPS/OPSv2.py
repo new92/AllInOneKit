@@ -1,3 +1,8 @@
+"""
+Author: @new92
+OPSv2: Program similar to OPS but upgraded and faster !
+"""
+
 try:
     import socket
     import nmap
@@ -19,7 +24,7 @@ def IsOpen(host,PortRange):
     sock = socket.socket()
     open = False
     
-    for port in range(1,PortRange):
+    for port in range(1,PortRange+1):
         try:
             connection = sock.connect((host,port))
             sock.settimeout(0.2)
@@ -42,5 +47,4 @@ print("[+] Please wait while the program is scanning your device...")
 IsOpen(host, PortRange)
 
 print("All Open Ports: "+str(OpenPorts))
-print("\n")
 print("All Closed Ports: "+str(ClosedPorts))
