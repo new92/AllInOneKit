@@ -1,4 +1,4 @@
-﻿"""
+"""
 Author: @new92
 Sniffer: Program for Sniffing Packets in the Network
 """
@@ -9,6 +9,7 @@ try:
     import os
     import sys
     import time
+    import pyfiglet
     import platform
     import scapy.all as scapy
     import argparse
@@ -23,6 +24,10 @@ except ImportError as imp:
         system("pip3 install -r requirements.txt")
     else:
         system("sudo pip3 install -r requirements.txt")
+
+#Logo
+snif = pyfiglet.figlet_format("SNIFFER")
+print(snif)
 
 #Defs
 def Intface():
@@ -42,9 +47,12 @@ def SniffPack(packet):
             keys = ["username","password","pass","email"]
             for key in keys():
                 if key in load:
-                    print("[+] Captured Possible Password/Username --> "+str(load))
+                    print("[+] Captured Possible Password/Username/Email --> "+str(load))
                     break
 #Main Program
-
+time.sleep(1)
+print("[+] Sniffer Started...")
+time.sleep(2)
+print("[+] Please wait while the program is gathering packets...")
 iface = Intface()
 Spoof(iface)
