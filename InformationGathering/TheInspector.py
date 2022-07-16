@@ -5,9 +5,8 @@ Made for educatinoal purposes
 The author has no responsibility for any illegal activity/activities carried out using this tool
 """
 
-#Sniffer
-
 #Imports
+
 try: 
     import sys
     import os
@@ -24,8 +23,7 @@ try:
     import smtplib
     import json 
     import getpass
-    import cryptography
-    import crypto
+    import http
     import instaloader
     import instagrapi
     import instapy
@@ -48,7 +46,7 @@ except ImportError as imp:
 #End of imports
 
 
-#Main program 
+#Main program
 snif = pyfiglet.figlet_format("SNIFFER")
 print(snif)
 
@@ -67,6 +65,7 @@ socialplatform=socialplatform.lower()
 socialplatform=socialplatform.strip()
 username=username.lower()
 username=username.strip()
+
 #Information Gathering
 
 if socialplatform == "instagram" or "Instagram":
