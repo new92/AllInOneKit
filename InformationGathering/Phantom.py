@@ -27,6 +27,8 @@ try:
     import argparse
     import builtwith
     import platform
+    import CMSDetector
+    from tqdm import tqdm
     from os import system
 except ImportError as imp:
     print("[!] WARNING: Not all modules used in this program have been installed !")
@@ -37,7 +39,7 @@ except ImportError as imp:
         system("pip3 install -r requirements.txt")
     else:
         system("sudo pip3 install -r requirements.txt")
-#End of imports
+
 
 #Logo
 phantom=pyfiglet.figlet_format("PHANTOM")
@@ -158,3 +160,4 @@ if option == "01" or option == "1":
 else:
     print("[+] Exiting...")
     exit(0)
+#End of the program
