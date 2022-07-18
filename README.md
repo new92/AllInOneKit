@@ -8,6 +8,8 @@ This kit contains many programs for brute force for social media accounts, for i
 ## TO DO: 
 
 
+▶ Social Media Accounts Brute Forcer :x:
+
 ▶ Instagram Phising Attack :x:             
 
 ▶ Linkedin Phising Attack :x:
@@ -28,8 +30,6 @@ This kit contains many programs for brute force for social media accounts, for i
 ▶ Trojan :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Trojan">Here</a>
 
 ▶ Open Port Scanner ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/OPS">Here</a>
-
-▶ Social Media Accounts Brute Forcer ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/BruteForcer">Here</a>
 
 ▶ Network Scanning ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/NetworkScanning">Here</a>
 
