@@ -35,6 +35,7 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ▶ Packet Sniffing ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/NetworkScanning/2">Here</a>
 
+▶ Spammer ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Spammer">Here</a>
 
 <h2> DOWNLOAD </h2>
 
