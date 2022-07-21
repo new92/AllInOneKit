@@ -1,6 +1,6 @@
 """
 Author: @new92
-Spammer: Program for spamming messages
+Spammer: Program for spamming messages on Instagram
 """
 
 #Imports
