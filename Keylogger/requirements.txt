@@ -1,0 +1,3 @@
+platform
+keyboard
+gmail
