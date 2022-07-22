@@ -27,7 +27,6 @@ try:
     import argparse
     import builtwith
     import platform
-    import CMSDetector
     from tqdm import tqdm
     from os import system
 except ImportError as imp:
@@ -39,7 +38,7 @@ except ImportError as imp:
         system("pip3 install -r requirements.txt")
     else:
         system("sudo pip3 install -r requirements.txt")
-
+#End of imports
 
 #Logo
 phantom=pyfiglet.figlet_format("PHANTOM")
@@ -66,9 +65,10 @@ class Information:
         loc = ipapi.location(ip = wip)
         return loc
 
-def OpenPorts(ips):
+"""def OpenPorts(ips):
     op = system("nmap --open "+str(ips))
     return op
+"""
 print("[+] Github: @new92")
 print("\n")
 print("[01] Information Gathering")
@@ -87,10 +87,14 @@ if option == "01" or option == "1":
     #Information Gathering
     
     IPport=socket.IPPORT_RESERVED
+    print("[!] NOTE: Website Examples - https://www.example.com , www.example.com , 192.168.1.50")
+    time.sleep(2)
     website1=input("[+] Please enter the name of the website: ")
-    while website1 == " " or website1 == "" or len(website1) == 0:
+    while website1 == None or len(website1) == 0:
         print("[!] Invalid Website !")
         time.sleep(1)
+        print("[!] NOTE: Website Examples - https://www.example.com , www.example.com , 192.168.1.50")
+        time.sleep(2)
         website1=input("[+] Please enter again the name of the website: ")
     website=website1.lower()
     website=website.strip()
@@ -99,6 +103,7 @@ if option == "01" or option == "1":
     time.sleep(1)
     if Info.status_code == requests.codes.ok:
         print("[!] Information Gathering Successfull !")
+        time.sleep(2)
     else:
         print("[!] Website not found !")
         time.sleep(1)
@@ -108,6 +113,7 @@ if option == "01" or option == "1":
     website = "https://www."+str(website)+".com"
     info = Information(website)
     wip = socket.gethostbyname(hname)
+    import CMSDetector
 
     # Main program
     for i in tqdm(range(10000000)):
@@ -151,7 +157,7 @@ if option == "01" or option == "1":
     time.sleep(2)
     print("   [+] Website Location: "+str(info.Location())+"        ")
     time.sleep(2)
-    print("   [+] Website Open Ports: "+str(OpenPorts(wip))+"              ")
+    #print("   [+] Website Open Ports: "+str(OpenPorts(wip))+"              ")
     time.sleep(2)
     print("   [+] Other Information: "+str(UsefulInfo)+"                   ")
     time.sleep(2)
