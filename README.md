@@ -35,6 +35,8 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ▶ Spammer ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Spammer">Here</a>
 
+▶ Keylogger ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Keylogger">Here</a>
+
 <h2> DOWNLOAD </h2>
 
 ## Linux:
