@@ -31,13 +31,9 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ▶ Open Port Scanner ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/OPS">Here</a>
 
-▶ Network Scanning ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/NetworkScanning">Here</a>
-
-▶ Packet Sniffing ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/NetworkScanning/2">Here</a>
+▶ Network Tools ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/NetworkTools">Here</a>
 
 ▶ Spammer ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Spammer">Here</a>
-
-▶ DHCP Listener ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/DHCPListener">Here</a>
 
 <h2> DOWNLOAD </h2>
 
