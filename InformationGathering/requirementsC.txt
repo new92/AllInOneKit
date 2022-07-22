@@ -1,0 +1,8 @@
+nmap
+sniffer
+webbrowser
+http
+requests
+re
+platform
+argparse
