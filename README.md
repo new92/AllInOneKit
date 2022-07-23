@@ -23,19 +23,20 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ▶ Social Media Accounts Brute Forcer :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/BruteForcer">BruteForcer</a>
 
-▶ Phising Attacks :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising">Here</a>
+▶ KeyLogger :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Keylogger">Keylogger</a>
 
-▶ Information Gathering :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/InformationGathering">Here</a>
+▶ Phising Attacks :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising">WebPhising</a>
 
-▶ Trojan :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Trojan">Here</a>
+▶ Information Gathering :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/InformationGathering">InformationGathering</a>
 
-▶ Open Port Scanner :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/OPS">Here</a>
+▶ Trojan :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Trojan">Trojan</a>
 
-▶ Network Tools :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/NetworkTools">Here</a>
+▶ Open Port Scanner :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/OPS">OPS</a>
 
-▶ Spammer :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Spammer">Here</a>
+▶ Network Tools :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/NetworkTools">NetworkTools</a>
 
-▶ Keylogger :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Keylogger">Here</a>
+▶ Spammer :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Spammer">Spammer</a>
+
 
 <h2> DOWNLOAD </h2>
 
