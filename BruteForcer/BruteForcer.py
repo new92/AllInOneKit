@@ -1,6 +1,6 @@
 """
 Author: @new92
-Brute Forcer: Program for Brute Forcing Instagram Accounts
+Brute Forcer: Program for Brute Forcing Accounts from Websites
 Please do not use it for illegal purposes !
 The author is not responsible for any illegal activity/activities carried out using this program !!
 The author's not responsible for any damages may be caused in the given account(s).
@@ -59,6 +59,9 @@ print("""
    d88P     888 888  888  "Y88888 88888P"  888  88888P'
 """)
 
+#Defs
+
+#Display Available Attacks
 def AvailAttacks():
     time.sleep(1)
     print("[1] Instagram")
