@@ -8,8 +8,6 @@ This kit contains many programs for brute force for social media accounts, for i
 ## TO DO: 
 
 
-▶ Social Media Accounts Brute Forcer :x:
-
 ▶ Instagram Phising Attack :x:             
 
 ▶ Linkedin Phising Attack :x:
@@ -23,19 +21,21 @@ This kit contains many programs for brute force for social media accounts, for i
 
 ## ALREADY DONE:
 
+▶ Social Media Accounts Brute Forcer :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/BruteForcer">BruteForcer</a>
+
 ▶ Phising Attacks :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/WebPhising">Here</a>
 
 ▶ Information Gathering :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/InformationGathering">Here</a>
 
 ▶ Trojan :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Trojan">Here</a>
 
-▶ Open Port Scanner ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/OPS">Here</a>
+▶ Open Port Scanner :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/OPS">Here</a>
 
-▶ Network Tools ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/NetworkTools">Here</a>
+▶ Network Tools :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/NetworkTools">Here</a>
 
-▶ Spammer ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Spammer">Here</a>
+▶ Spammer :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Spammer">Here</a>
 
-▶ Keylogger ✅ ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Keylogger">Here</a>
+▶ Keylogger :white_check_mark: ➡️ <a href="https://github.com/new92/AllInOneKit/tree/main/Keylogger">Here</a>
 
 <h2> DOWNLOAD </h2>
 
