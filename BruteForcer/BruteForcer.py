@@ -7,6 +7,10 @@ The author's not responsible for any damages may be caused in the given account(
 """
 #Imports
 try:
+    import time
+    import platform
+    from os import system
+    from datetime import time
     import sniffer
     import socket
     import http
@@ -14,7 +18,6 @@ try:
     import webbrowser
     import requests
     import tkinter
-    import time
     import instapy
     import nmap
     import json
@@ -25,12 +28,12 @@ try:
     import instabot
     import urllib
     import urllib3
-    import platform
     import re
     import scrapy
     import selenium
     import imaplib
-    from os import system
+    import art
+    from art import tprint
     from selenium import webdriver
     from selenium.webdriver.support.ui import WebDriverWait
     from tkinter import messagebox
@@ -49,16 +52,7 @@ tkinter.messagebox.showinfo("Use !","This program has been created only for educ
 
 
 #Logo
-print("""
-          d8888                   888      d8b
-         d88888                   888      Y8P
-        d88P888                   888
-       d88P 888 88888b.  888  888 88888b.  888 .d8888b
-      d88P  888 888 "88b 888  888 888 "88b 888 88K
-     d88P   888 888  888 888  888 888  888 888 "Y8888b.
-    d8888888888 888  888 Y88b 888 888 d88P 888      X88
-   d88P     888 888  888  "Y88888 88888P"  888  88888P'
-""")
+tprint("BRUTEFORCER",font="tarty1")
 
 #Defs
 
@@ -1397,6 +1391,7 @@ def Xhamster():
             continue
 #Main Program
 
+print("\n")
 print("[+] Github: @new92")
 print("\n")
 print("[01] Brute Force Account")
