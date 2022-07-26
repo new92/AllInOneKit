@@ -10,7 +10,6 @@ try:
     import time
     import platform
     from os import system
-    from datetime import time
     import sniffer
     import socket
     import http
