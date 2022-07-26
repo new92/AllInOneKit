@@ -1,6 +1,6 @@
 """
 Author: @new92
-Spammer: Program for spamming messages on Instagram
+Spammer: Program for spamming messages on Instagram Accounts
 """
 
 #Imports
@@ -36,7 +36,7 @@ tprint("SPAMMER",font="tarty1")
 
 #Main Program
 print("\n")
-print("[+] Program for spamming messages on someone :) ")
+print("[+] Program for spamming messages on someone's Instagram :) ")
 print("\n")
 print("[+] Github: @new92")
 print("\n")
@@ -87,7 +87,10 @@ if option == 1:
         msg = str(input("[::] Please enter again the message to send: "))
     i = 1
     while i > 0:
-        bot1.send_message(msg,id)
+        try:
+            bot1.send_message(msg,id)
+        except Exception as e:
+            continue
         time.sleep(1)
         print("[!] Message Send !")
 else:
