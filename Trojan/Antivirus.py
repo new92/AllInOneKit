@@ -126,7 +126,7 @@ time.sleep(1)
 print("[5] : Database Update")
 time.sleep(1)
 action=int(input("[::] Please enter the action you want to make: "))
-while action <= 0 or action > 5:
+while action <= 0 or action > 5 or action == None:
     print("[!] Invalid Action !")
     time.sleep(2)
     action=int(input("[::] Please enter again: "))
