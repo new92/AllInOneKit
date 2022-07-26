@@ -1,0 +1,154 @@
+body {
+    font-family: sans-serif;
+}
+
+.logo {
+    height: 75px;
+    width: 75px;
+    margin-top: 150px;
+    margin-left: 747px;
+}
+
+.connectl {
+    font-weight: 400;
+    font-size: 34px;
+    margin-left: 550px;
+    margin-top: 40px;
+}
+
+form {
+    margin-left: 620px;
+}
+
+
+.email {
+    border-radius: 4px;
+    height: 42px;
+    width: 300px;
+    border: 1px solid #dddfe2;
+}
+
+    .email:hover {
+        cursor: auto;
+    }
+
+    .email::placeholder {
+        font-size: 16px;
+        color: #9d9d9d;
+    }
+
+.password {
+    border-radius: 4px;
+    height: 40px;
+    width: 300px;
+    border: 1px solid #dddfe2;
+}
+
+    .password:hover {
+        cursor: auto;
+    }
+
+    .password::placeholder {
+        font-size: 16px;
+        color: #9d9d9d;
+    }
+
+.connect {
+    margin-left: 110px;
+    border-radius: 25px;
+    background-color: #0A7CFF;
+    height: 48px;
+    width: 96px;
+    color: #ffffff;
+    border: 1px solid #0A7CFF;
+    font-size: 16px;
+}
+
+    .connect:hover {
+        cursor: pointer;
+    }
+
+.stayconn {
+    color: #929292;
+    font-size: 15px;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    margin-left: 8px;
+}
+
+.box {
+    border: 1px solid #0A7CFF;
+    background-color: #0A7CFF;
+    margin-top: 20px;
+    margin-left: 90px;
+    height: 15px;
+    width: 15px;
+}
+
+.nface {
+    color: #1C1E21;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif; 
+    margin-left: 340px;
+}
+
+    .nface:hover {
+        text-decoration: underline;
+    }
+
+.forpass {
+    color: #1C1E21;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    margin-left: 40px;
+}
+
+    .forpass:hover {
+        text-decoration: underline;
+    }
+
+.privacy {
+    color: #1C1E21;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    margin-left: 40px;
+}
+
+    .privacy:hover {
+        text-decoration: underline;
+    }
+
+.terms {
+    color: #1C1E21;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    margin-left: 40px;
+}
+
+    .terms:hover {
+        text-decoration: underline;
+    }
+
+.cookies {
+    color: #1C1E21;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    margin-left: 40px;
+}
+
+    .cookies:hover {
+        text-decoration: underline;
+    }
+
+.meta {
+    color: #1C1E21;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    margin-left: 1091px;
+    margin-top: -18px;
+}

