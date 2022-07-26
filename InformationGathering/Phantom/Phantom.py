@@ -35,7 +35,7 @@ except ImportError as imp:
     print("[!] WARNING: Not all modules used in this program have been installed !")
     time.sleep(2)
     print("[+] Ignoring Warning...")
-    time.sleep(1)
+    time.sleep(2)
     if platform.system == "Windows":
         system("pip3 install -r requirements.txt")
     else:
@@ -43,7 +43,7 @@ except ImportError as imp:
 #End of imports
 
 #Logo
-tprint("PHANTOM",font="blocks")
+tprint("PHANTOM",font="tarty1")
 #
 
 class Information:
@@ -70,6 +70,7 @@ def OpenPorts(ips):
     op = system("nmap --open "+str(ips))
     return op
 
+print("\n")
 print("[+] Github: @new92")
 print("\n")
 print("[01] Information Gathering")
@@ -85,7 +86,7 @@ while option != "01" and option != "02" and option != "1" and option != "2":
 if option == "01" or option == "1":
     time.sleep(1)
 
-#Information Gathering
+    #Information Gathering
     
     IPport=socket.IPPORT_RESERVED
     print("[!] NOTE: Website Examples - https://www.example.com , www.example.com , 192.168.1.50")
