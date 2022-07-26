@@ -3,6 +3,10 @@ Author: @new92
 CMSDetector: Program for detecting if a website is using CMS
 """
 try:
+    import time
+    import platform
+    from os import system
+    from datetime import time
     import nmap
     import sniffer
     import webbrowser
@@ -11,10 +15,7 @@ try:
     import re
     import os
     import sys
-    import time
-    import platform
     import argparse
-    from os import system
 except ImportError as imp:
     print("[!] WARNING: Not all modules used in this program have been installed !")
     time.sleep(2)
@@ -281,4 +282,3 @@ def Scanner():
 print("[+] Initiating Scan...")
 time.sleep(1)
 Scanner()
-
