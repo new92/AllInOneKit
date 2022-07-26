@@ -4,17 +4,22 @@ DHCP Listener: Program for Capturing and Extracting Packets Containing Useful In
 Not for illegal use !
 The Author has no responsibility for the use of this program
 """
+
+#Imports
+
 try:
+    import time
+    import platform
+    from os import system
+    from datetime import time
     import sniffer
     import nmap
     import requests
     import scapy
     import http
-    import platform
     import os
     import sys
-    import time
-    from os import system
+    import pyfiglet
     from scapy.all import *
 except ImportError as imp:
     print("[!] WARNING: Not all modules used in this program have been installed !")
@@ -25,6 +30,24 @@ except ImportError as imp:
         system("pip3 install -r requirements.txt")
     else:
         system("sudo pip3 install -r requirements.txt")
+
+#Logo
+dhcp = pyfiglet.figlet_format("DHCP   LISTENER")
+print(dhcp)
+
+#Main Program
+print("\n")
+print("[+] Github: @new92")
+print("\n")
+print("[1] Inititate DHCP Listener")
+print("[2] Exit")
+option=int(input("[::] Please enter the choice: "))
+while option <= 0 or option > 2:
+    print("[!] Invalid Option !")
+    time.sleep(1)
+    option=int(input("[::] Please enter again the option: "))
+
+#Defs
 
 def DHCP_Listener():
     sniff(prn=Disp_Packet, filter="udp and (port 67 or port 68)")
@@ -48,6 +71,11 @@ def Disp_Packet(packet):
     if mac and vid and hname and ip:
         curTime = time.strftime("[%Y-%m-%d - %H:%M:%S]")
         print(f"{curTime} : MAC: {mac} - HOSTNAME: {hname} / {vid} requested {ip}")
-print("[+] Listener Started...")
-if __name__ == "__main__":
-    DHCP_Listener()
+if option == 1:
+    print("[+] Listener Started...")
+    if __name__ == "__main__":
+        DHCP_Listener()
+else:
+    print("[+] Exiting...")
+    exit(0)
+#End of the Program
