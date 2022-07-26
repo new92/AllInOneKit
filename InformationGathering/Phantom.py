@@ -8,13 +8,15 @@ The author has no responsibility for any illegal activity/activities carried out
 
 #Imports
 try:
+    import time
+    import platform
+    from os import system
+    from datetime import time
     import sys
     import os 
     import socket
-    import locale 
-    import platform
-    import time
-    import requests 
+    import locale
+    import requests
     import sniffer
     import pyfiglet
     import scrapy
@@ -26,14 +28,14 @@ try:
     import tqdm
     import argparse
     import builtwith
-    import platform
+    import art
+    from art import tprint
     from tqdm import tqdm
-    from os import system
 except ImportError as imp:
     print("[!] WARNING: Not all modules used in this program have been installed !")
     time.sleep(2)
     print("[+] Ignoring Warning...")
-    time.sleep(2)
+    time.sleep(1)
     if platform.system == "Windows":
         system("pip3 install -r requirements.txt")
     else:
@@ -41,8 +43,7 @@ except ImportError as imp:
 #End of imports
 
 #Logo
-phantom=pyfiglet.figlet_format("PHANTOM")
-print(phantom)
+tprint("PHANTOM",font="blocks")
 #
 
 class Information:
@@ -65,10 +66,10 @@ class Information:
         loc = ipapi.location(ip = wip)
         return loc
 
-"""def OpenPorts(ips):
+def OpenPorts(ips):
     op = system("nmap --open "+str(ips))
     return op
-"""
+
 print("[+] Github: @new92")
 print("\n")
 print("[01] Information Gathering")
@@ -84,7 +85,7 @@ while option != "01" and option != "02" and option != "1" and option != "2":
 if option == "01" or option == "1":
     time.sleep(1)
 
-    #Information Gathering
+#Information Gathering
     
     IPport=socket.IPPORT_RESERVED
     print("[!] NOTE: Website Examples - https://www.example.com , www.example.com , 192.168.1.50")
