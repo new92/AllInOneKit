@@ -11,5 +11,5 @@
 
 ## Reporting a Vulnerability
 
-▶️ Report the vulnerability to an issue and i will fix as soon as possible
+▶️ Report the vulnerability as an issue and i will fix as soon as possible
 
