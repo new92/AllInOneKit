@@ -27,6 +27,8 @@ try:
     import argparse
     import builtwith
     import art
+    import selenium
+    import bs4
     from art import tprint
     from tqdm import tqdm
 except ImportError as imp:
