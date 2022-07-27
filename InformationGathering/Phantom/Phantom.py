@@ -17,7 +17,6 @@ try:
     import locale
     import requests
     import sniffer
-    import pyfiglet
     import scrapy
     import nmap
     import whois
