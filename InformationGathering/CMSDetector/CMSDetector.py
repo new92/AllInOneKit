@@ -6,7 +6,6 @@ try:
     import time
     import platform
     from os import system
-    from datetime import time
     import nmap
     import sniffer
     import webbrowser
@@ -16,6 +15,8 @@ try:
     import os
     import sys
     import argparse
+    import art
+    from art import tprint
 except ImportError as imp:
     print("[!] WARNING: Not all modules used in this program have been installed !")
     time.sleep(2)
@@ -32,7 +33,7 @@ def WebSite(website):
     var = requests.get(website, allow_redirects= False, headers= us_agent)
     return var
 #Checking if Website is Online
-def IsOnline(website1):
+def Is_On(website1):
     print("[+] Website Online Check...")
     time.sleep(1)
     status = False
@@ -45,7 +46,7 @@ def IsOnline(website1):
             status = True
             print("[!] Website in online --> "+str(status))
 #Checking if Website is Redirecting
-def IsRedirecting(website1):
+def Is_Red(website1):
     print("[+] Redirect Check...")
     time.sleep(1)
     redCheck = requests.get(website1, headers=us_agent)
@@ -246,13 +247,13 @@ def PHPMYADMIN(websitep):
         print("[+] Ignoring and Continuing...")
 #Main Scanner
 def Scanner():
-    print("[!] NOTE: Website Examples - https://www.example.com , www.example.com , 192.168.1.50")
+    print("[!] NOTE: Website Examples - https://www.example.com , www.example.com ")
     time.sleep(2)
     website = input("[+] Please enter again the website: ")
-    while website == None:
+    while website == None or not website.endswith(".com") or "www" not in website:
         print("[!] You must enter a website !")
         time.sleep(1)
-        website = input("[+] Please enter again the website: ")
+        website = input("[+] Please enter the website: ")
     if website.startswith("http://"):
         protocol = "http://"
         website = website[7:]
@@ -265,12 +266,15 @@ def Scanner():
     if website.endswith("/"):
         website = website.strip('/')
 
-    website = protocol + website 
+    website = protocol + website
 
-    IsOnline(website)
-    IsRedirecting(website)
     time.sleep(1)
-    print("[+] Beggining Scan...")
+    print("[+] Initiating Website Tests...")
+    time.sleep(1)
+    Is_On(website)
+    Is_Red(website)
+    time.sleep(1)
+    print("[+] Initiating Scan...")
     time.sleep(1)
     WordPress(website)
     Joomla(website)
@@ -279,6 +283,26 @@ def Scanner():
     PHPMYADMIN(website)
     print("[!] Scan Complete !")
 
-print("[+] Initiating Scan...")
-time.sleep(1)
-Scanner()
+#Logo
+tprint("CMSDETECTOR",font="tarty1")
+
+#Main Program
+print("\n")
+print("[+] Program for Detecting the CMS a website is using !")
+print("\n")
+print("[+] Github: @new92")
+print("\n")
+print("[1] Initiate Detector")
+print("[2] Exit")
+option=int(input("[::] Please enter the number: "))
+while option <= 0 or option > 2 or option == None:
+    print("[!] Invalid Number !")
+    time.sleep(1)
+    option=int(input("[::] Please enter again the number: "))
+if option == 1:
+    print("[+] Initiating Scan...")
+    time.sleep(1)
+    Scanner()
+else:
+    print("[+] Exiting...")
+    exit(0)
