@@ -4,7 +4,7 @@ locale
 platform
 time
 random
-pyfiglet
+art
 geocoder
 requests
 http
@@ -14,8 +14,6 @@ webbrowser
 smtplib
 json 
 getpass
-cryptography
-crypto
 sniffer
 gmail
 psutil
