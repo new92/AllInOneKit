@@ -202,4 +202,3 @@ elif action == 5:
     print("[+] No database update needed")
     time.sleep(2)
     print("[+] The program updated them "+str(num)+" hours ago")
-#End of the program
