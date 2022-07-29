@@ -43,4 +43,20 @@
   <br>
   22) Zoom
   <br>
-  23) Pornhub
+  23) W3Schools
+  <br>
+  24) Leetcode
+  <br>
+  25) Geeks for Geeks
+  <br>
+  26) Flickr
+  <br>
+  27) Fiverr
+  <br>
+  28) Gitlab
+  <br>
+  29) Freelancer
+  <br>
+  30) Microsoft
+  <br>
+  31) Pornhub
