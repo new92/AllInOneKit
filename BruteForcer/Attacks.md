@@ -1,26 +1,46 @@
 <h1><u>Available Attacks for Brute Force:</u></h1>
   1) Instagram
   <br>
-  3) Facebook
-  4) Messenger
-  5) Gmail
-  6) Reddit
-  7) TikTok
-  8) Netflix
-  9) Pinterest
-  10) LinkedIn
-  11) Paypal
-  12) Snapchat
-  13) Spotify
-  14) Twitch
-  15) Steam
-  16) Badoo
-  17) Crypto
-  18) DropBox
-  19) Oracle
-  20) StackOverFlow
-  21) IG Followers
-  22) FIFA
-  23) Zoom
-  24) Pornhub
-  25) Xhamster
+  2) Facebook
+  <br>
+  3) Messenger
+  <br>
+  4) Gmail
+  <br>
+  5) Reddit
+  <br>
+  6) TikTok
+  <br>
+  7) Netflix
+  <br>
+  8) Pinterest
+  <br>
+  9) LinkedIn
+  <br>
+  10) Paypal
+  <br>
+  11) Snapchat
+  <br>
+  12) Spotify
+  <br>
+  13) Twitch
+  <br>
+  14) Steam
+  <br>
+  15) Badoo
+  <br>
+  16) Crypto
+  <br>
+  17) DropBox
+  <br>
+  18) Oracle
+  <br>
+  19) StackOverFlow
+  <br>
+  20) IG Followers
+  <br>
+  21) FIFA
+  <br>
+  22) Zoom
+  <br>
+  23) Pornhub
