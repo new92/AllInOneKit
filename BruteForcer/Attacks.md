@@ -19,44 +19,44 @@
   <br>
   10) <a href="https://www.paypal.com/">Paypal</a>
   <br>
-  11) Snapchat
+  11) <a href="https://www.snapchat.com/">Snapchat</a>
   <br>
-  12) Spotify
+  12) <a href="https://open.spotify.com/">Spotify</a>
   <br>
-  13) Twitch
+  13) <a href="https://www.twitch.tv/">Twitch</a>
   <br>
-  14) Steam
+  14) <a href="https://store.steampowered.com/">Steam</a>
   <br>
-  15) Badoo
+  15) <a href="https://badoo.com/">Badoo</a>
   <br>
-  16) Crypto
+  16) <a href="https://crypto.com/">Crypto</a>
   <br>
-  17) DropBox
+  17) <a href="https://www.dropbox.com/">DropBox</a>
   <br>
-  18) Oracle
+  18) <a href="https://www.oracle.com/">Oracle</a>
   <br>
-  19) StackOverFlow
+  19) <a href="https://stackoverflow.com/">StackOverFlow</a>
   <br>
-  20) IG Followers
+  20) <a href="https://igfollower.net/">IG Followers</a>
   <br>
-  21) FIFA
+  21) <a href="https://www.fifa.com/">FIFA</a>
   <br>
-  22) Zoom
+  22) <a href="https://zoom.us/">Zoom</a>
   <br>
-  23) W3Schools
+  23) <a href="https://www.w3schools.com/">W3Schools</a>
   <br>
-  24) Leetcode
+  24) <a href="https://leetcode.com/">Leetcode</a>
   <br>
-  25) Geeks for Geeks
+  25) <a href="https://www.geeksforgeeks.org/">Geeks for Geeks</a>
   <br>
-  26) Flickr
+  26) <a href="https://www.flickr.com/">Flickr</a>
   <br>
-  27) Fiverr
+  27) <a href="https://www.fiverr.com/">Fiverr</a>
   <br>
-  28) Gitlab
+  28) <a href="https://about.gitlab.com/">Gitlab</a>
   <br>
-  29) Freelancer
+  29) <a href="https://www.freelancer.com/">Freelancer</a>
   <br>
-  30) Microsoft
+  30) <a href="https://microsoft.com/">Microsoft</a>
   <br>
-  31) Pornhub
+  31) <a href="https://www.pornhub.com/">Pornhub</a>
