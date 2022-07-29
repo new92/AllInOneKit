@@ -1,23 +1,23 @@
 <h1><u>Available Attacks for Brute Force:</u></h1>
-  1) Instagram
+  1) <a href="https://www.instagram.com/">Instagram</a>
   <br>
-  2) Facebook
+  2) <a href="https://www.facebook.com/">Facebook</a>
   <br>
-  3) Messenger
+  3) <a href="https://www.messenger.com/">Messenger</a>
   <br>
-  4) Gmail
+  4) <a href="https://www.mail.google.com/">Gmail</a>
   <br>
-  5) Reddit
+  5) <a href="https://www.reddit.com/">Reddit</a>
   <br>
-  6) TikTok
+  6) <a href="https://www.tiktok.com/">TikTok</a>
   <br>
-  7) Netflix
+  7) <a href="https://www.netflix.com/">Netflix</a>
   <br>
-  8) Pinterest
+  8) <a href="https://pinterest.com/">Pinterest</a>
   <br>
-  9) LinkedIn
+  9) <a href="https://www.linkedin.com/">LinkedIn</a>
   <br>
-  10) Paypal
+  10) <a href="https://www.paypal.com/">Paypal</a>
   <br>
   11) Snapchat
   <br>
