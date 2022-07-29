@@ -1,11 +1,11 @@
 <h1><u>Available Attacks for Brute Force:</u></h1>
-  1) Instagram
-  2) Facebook
-  3) Messenger
-  4) Gmail
-  5) Reddit
-  6) TikTok
-  7) Netflix
+  1) Instagram\n
+  2) Facebook\n
+  3) Messenger\n
+  4) Gmail\n
+  5) Reddit\n
+  6) TikTok\n
+  7) Netflix\n
   8) Pinterest
   9) LinkedIn
   10) Paypal
